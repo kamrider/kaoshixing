@@ -642,3 +642,71 @@ Stacktrace:
 2025-02-28 00:11:14,481 - INFO - 点击后复选框状态: 未选中
 2025-02-28 00:11:14,626 - INFO - 点击确认按钮
 2025-02-28 00:11:16,627 - INFO - 设置操作完成
+2025-02-28 00:15:04,397 - ERROR - 程序执行出错: invalid literal for int() with base 10: '& "C:/Users/ly frienk/AppData/Local/Programs/Python/Python312/python.exe" e:/Github/kaoshixing/kaoshixing_automation.py'
+2025-02-28 00:15:06,751 - INFO - 浏览器已关闭
+2025-02-28 00:15:16,674 - INFO - 找到Chrome配置文件路径: C:\Users\ly frienk\AppData\Local\Google\Chrome\User Data
+2025-02-28 00:15:16,675 - INFO - 使用配置文件: Profile 2
+2025-02-28 00:15:16,675 - INFO - 正在下载ChromeDriver 133.0.6943.141...
+2025-02-28 00:15:17,577 - INFO - ChromeDriver 133.0.6943.141 下载并解压成功
+2025-02-28 00:15:17,578 - INFO - 使用下载的ChromeDriver: C:\Users\ly frienk\.wdm\drivers\chromedriver\win64\133.0.6943.141\chromedriver.exe
+2025-02-28 00:15:19,118 - INFO - Chrome浏览器驱动初始化成功，已设置模拟真人行为
+2025-02-28 00:15:22,723 - INFO - 打开试卷创建页面: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-02-28 00:15:22,723 - INFO - 等待页面完全加载 (5秒)...
+2025-02-28 00:15:27,724 - INFO - 尝试点击设置按钮...
+2025-02-28 00:15:27,862 - INFO - 成功点击设置按钮
+2025-02-28 00:15:29,891 - INFO - 复选框当前状态: 未选中
+2025-02-28 00:15:29,941 - INFO - 点击复选框使其选中
+2025-02-28 00:15:30,948 - INFO - 点击后复选框状态: 未选中
+2025-02-28 00:15:31,046 - INFO - 点击确认按钮
+2025-02-28 00:15:33,047 - INFO - 设置操作完成
+2025-03-02 18:14:52,429 - INFO - 找到Chrome配置文件路径: C:\Users\ly frienk\AppData\Local\Google\Chrome\User Data
+2025-03-02 18:14:52,432 - INFO - 使用配置文件: Profile 2
+2025-03-02 18:14:52,432 - INFO - 正在下载ChromeDriver 133.0.6943.141...
+2025-03-02 18:14:53,392 - INFO - ChromeDriver 133.0.6943.141 下载并解压成功
+2025-03-02 18:14:53,395 - INFO - 使用下载的ChromeDriver: C:\Users\ly frienk\.wdm\drivers\chromedriver\win64\133.0.6943.141\chromedriver.exe
+2025-03-02 18:14:56,663 - ERROR - Chrome浏览器驱动初始化失败: Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir
+Stacktrace:
+	GetHandleVerifier [0x00007FF761F1C6A5+28789]
+	(No symbol) [0x00007FF761E85B20]
+	(No symbol) [0x00007FF761D18F9A]
+	(No symbol) [0x00007FF761D555C4]
+	(No symbol) [0x00007FF761D515AD]
+	(No symbol) [0x00007FF761DA555B]
+	(No symbol) [0x00007FF761DA4B30]
+	(No symbol) [0x00007FF761D97103]
+	(No symbol) [0x00007FF761D5FFC0]
+	(No symbol) [0x00007FF761D61273]
+	GetHandleVerifier [0x00007FF762261AED+3458237]
+	GetHandleVerifier [0x00007FF76227829C+3550316]
+	GetHandleVerifier [0x00007FF76226DB9D+3507565]
+	GetHandleVerifier [0x00007FF761FE2C6A+841274]
+	(No symbol) [0x00007FF761E909EF]
+	(No symbol) [0x00007FF761E8CB34]
+	(No symbol) [0x00007FF761E8CCD6]
+	(No symbol) [0x00007FF761E7C119]
+	BaseThreadInitThunk [0x00007FFB803F259D+29]
+	RtlUserThreadStart [0x00007FFB8270AF38+40]
+
+2025-03-02 18:14:56,669 - ERROR - 程序执行出错: Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir
+Stacktrace:
+	GetHandleVerifier [0x00007FF761F1C6A5+28789]
+	(No symbol) [0x00007FF761E85B20]
+	(No symbol) [0x00007FF761D18F9A]
+	(No symbol) [0x00007FF761D555C4]
+	(No symbol) [0x00007FF761D515AD]
+	(No symbol) [0x00007FF761DA555B]
+	(No symbol) [0x00007FF761DA4B30]
+	(No symbol) [0x00007FF761D97103]
+	(No symbol) [0x00007FF761D5FFC0]
+	(No symbol) [0x00007FF761D61273]
+	GetHandleVerifier [0x00007FF762261AED+3458237]
+	GetHandleVerifier [0x00007FF76227829C+3550316]
+	GetHandleVerifier [0x00007FF76226DB9D+3507565]
+	GetHandleVerifier [0x00007FF761FE2C6A+841274]
+	(No symbol) [0x00007FF761E909EF]
+	(No symbol) [0x00007FF761E8CB34]
+	(No symbol) [0x00007FF761E8CCD6]
+	(No symbol) [0x00007FF761E7C119]
+	BaseThreadInitThunk [0x00007FFB803F259D+29]
+	RtlUserThreadStart [0x00007FFB8270AF38+40]
+

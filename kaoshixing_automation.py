@@ -11,6 +11,7 @@ import os
 import requests
 import zipfile
 import io
+from selenium.webdriver.common.action_chains import ActionChains
 
 # 配置日志
 logging.basicConfig(
@@ -358,72 +359,128 @@ class KaoshixingAutomation:
             topic.click()
             time.sleep(1)
             
-            # 查找添加题目按钮
-            add_question_btn = None
-            
-            # 尝试多种方法查找添加题目按钮
+            # 查找添加题目按钮 - 使用提供的选择器
             try:
-                # 方法1: 直接在大题内查找
-                add_question_btn = topic.find_element(By.CSS_SELECTOR, "button:not(.is-disabled), .add-question-btn, .add-btn")
-            except:
-                # 方法2: 使用JavaScript查找
-                add_question_btn = self.driver.execute_script("""
-                    var topic = arguments[0];
-                    return topic.querySelector('button:not(.is-disabled)') || 
-                           topic.querySelector('.add-question-btn') || 
-                           topic.querySelector('.add-btn');
-                """, topic)
-            
-            if not add_question_btn:
-                logger.error(f"在第 {topic_index+1} 个大题中找不到添加题目按钮")
-                return False
-            
-            # 点击添加题目按钮
-            add_question_btn.click()
-            logger.info(f"点击第 {topic_index+1} 个大题的添加题目按钮")
-            time.sleep(1)
-            
-            # 选择题型
-            question_type_found = False
-            
-            # 方法1: 查找下拉菜单项
-            try:
-                menu_items = WebDriverWait(self.driver, 5).until(
-                    EC.presence_of_all_elements_located((By.CSS_SELECTOR, ".el-dropdown-menu__item, .dropdown-item"))
-                )
+                # 尝试使用提供的选择器
+                dropdown_selectors = [
+                    "#subject > div > div > div > div.content-suject-card > div.suject-opreate > div:nth-child(1) > div > div",
+                    "//*[@id=\"subject\"]/div/div/div/div[2]/div[2]/div[1]/div/div",
+                    "//div[@class='suject-opreate']/div[1]/div/div"
+                ]
                 
-                for item in menu_items:
-                    if question_type in item.text:
-                        item.click()
-                        question_type_found = True
-                        logger.info(f"选择题型: {question_type}")
+                dropdown_element = None
+                for selector in dropdown_selectors:
+                    try:
+                        if selector.startswith("//"):
+                            dropdown_element = WebDriverWait(self.driver, 5).until(
+                                EC.element_to_be_clickable((By.XPATH, selector))
+                            )
+                        else:
+                            dropdown_element = WebDriverWait(self.driver, 5).until(
+                                EC.element_to_be_clickable((By.CSS_SELECTOR, selector))
+                            )
+                        logger.info(f"使用选择器 '{selector}' 找到下拉菜单")
                         break
-            except:
-                logger.warning("未找到下拉菜单项，尝试其他方法")
-            
-            # 方法2: 如果没有找到下拉菜单，尝试查找题型选择对话框
-            if not question_type_found:
-                try:
-                    type_btns = self.driver.find_elements(By.CSS_SELECTOR, ".question-type-item, .type-item")
-                    for btn in type_btns:
-                        if question_type in btn.text:
-                            btn.click()
-                            question_type_found = True
-                            logger.info(f"在对话框中选择题型: {question_type}")
-                            
-                            # 点击确认按钮
-                            confirm_btns = self.driver.find_elements(By.CSS_SELECTOR, "button.el-button--primary:not(.is-disabled)")
-                            for confirm_btn in confirm_btns:
-                                if "确定" in confirm_btn.text or "确认" in confirm_btn.text:
-                                    confirm_btn.click()
-                                    logger.info("点击确认按钮")
-                                    break
+                    except:
+                        logger.info(f"选择器 '{selector}' 未找到元素")
+                
+                if dropdown_element:
+                    # 悬停在下拉菜单上
+                    actions = ActionChains(self.driver)
+                    actions.move_to_element(dropdown_element).perform()
+                    logger.info("悬停在下拉菜单上")
+                    time.sleep(1)
+                    
+                    # 点击下拉菜单
+                    dropdown_element.click()
+                    logger.info("点击下拉菜单")
+                    time.sleep(1)
+                    
+                    # 查找并点击"简答题"选项
+                    menu_items = WebDriverWait(self.driver, 5).until(
+                        EC.presence_of_all_elements_located((By.CSS_SELECTOR, ".el-dropdown-menu__item, .dropdown-item, li"))
+                    )
+                    
+                    for item in menu_items:
+                        if "简答题" in item.text:
+                            item.click()
+                            logger.info("选择题型: 简答题")
+                            question_type = "简答题"  # 更新题型
+                            time.sleep(2)
                             break
-                except:
-                    logger.warning("未找到题型选择对话框")
-            
-            if not question_type_found:
-                logger.error(f"无法选择题型: {question_type}")
+                else:
+                    # 如果找不到特定的下拉菜单，回退到原来的方法
+                    logger.warning("未找到指定的下拉菜单，尝试使用备用方法")
+                    
+                    # 查找添加题目按钮
+                    add_question_btn = None
+                    
+                    # 尝试多种方法查找添加题目按钮
+                    try:
+                        # 方法1: 直接在大题内查找
+                        add_question_btn = topic.find_element(By.CSS_SELECTOR, "button:not(.is-disabled), .add-question-btn, .add-btn")
+                    except:
+                        # 方法2: 使用JavaScript查找
+                        add_question_btn = self.driver.execute_script("""
+                            var topic = arguments[0];
+                            return topic.querySelector('button:not(.is-disabled)') || 
+                                topic.querySelector('.add-question-btn') || 
+                                topic.querySelector('.add-btn');
+                        """, topic)
+                    
+                    if not add_question_btn:
+                        logger.error(f"在第 {topic_index+1} 个大题中找不到添加题目按钮")
+                        return False
+                    
+                    # 点击添加题目按钮
+                    add_question_btn.click()
+                    logger.info(f"点击第 {topic_index+1} 个大题的添加题目按钮")
+                    time.sleep(1)
+                    
+                    # 选择题型
+                    question_type_found = False
+                    
+                    # 方法1: 查找下拉菜单项
+                    try:
+                        menu_items = WebDriverWait(self.driver, 5).until(
+                            EC.presence_of_all_elements_located((By.CSS_SELECTOR, ".el-dropdown-menu__item, .dropdown-item"))
+                        )
+                        
+                        for item in menu_items:
+                            if question_type in item.text:
+                                item.click()
+                                question_type_found = True
+                                logger.info(f"选择题型: {question_type}")
+                                break
+                    except:
+                        logger.warning("未找到下拉菜单项，尝试其他方法")
+                    
+                    # 方法2: 如果没有找到下拉菜单，尝试查找题型选择对话框
+                    if not question_type_found:
+                        try:
+                            type_btns = self.driver.find_elements(By.CSS_SELECTOR, ".question-type-item, .type-item")
+                            for btn in type_btns:
+                                if question_type in btn.text:
+                                    btn.click()
+                                    question_type_found = True
+                                    logger.info(f"在对话框中选择题型: {question_type}")
+                                    
+                                    # 点击确认按钮
+                                    confirm_btns = self.driver.find_elements(By.CSS_SELECTOR, "button.el-button--primary:not(.is-disabled)")
+                                    for confirm_btn in confirm_btns:
+                                        if "确定" in confirm_btn.text or "确认" in confirm_btn.text:
+                                            confirm_btn.click()
+                                            logger.info("点击确认按钮")
+                                            break
+                                    break
+                        except:
+                            logger.warning("未找到题型选择对话框")
+                    
+                    if not question_type_found:
+                        logger.error(f"无法选择题型: {question_type}")
+                        return False
+            except Exception as e:
+                logger.error(f"选择题型时出错: {e}")
                 return False
             
             # 等待题目编辑器加载
@@ -439,7 +496,7 @@ class KaoshixingAutomation:
                 stem_editor.send_keys(f"这是第 {topic_index+1} 个大题的{question_type}题干")
                 logger.info(f"填写题干: 这是第 {topic_index+1} 个大题的{question_type}题干")
                 
-                # 如果是问答题，可能需要填写参考答案
+                # 如果是问答题或简答题，可能需要填写参考答案
                 answer_editors = self.driver.find_elements(By.CSS_SELECTOR, ".answer-editor .ql-editor, .reference-answer [contenteditable='true']")
                 if answer_editors:
                     answer_editors[0].clear()
@@ -478,7 +535,7 @@ class KaoshixingAutomation:
             # 为每个大题添加题目
             for i in range(min(len(topics), topic_count)):
                 for j in range(questions_per_topic):
-                    self.add_question_to_topic(i)
+                    self.add_question_to_topic(i, question_type="简答题")  # 默认使用简答题
                     time.sleep(2)
             
             # 点击保存试卷按钮
