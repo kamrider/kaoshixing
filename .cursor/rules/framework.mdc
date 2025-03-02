@@ -1,0 +1,87 @@
+---
+description: 文件结构
+globs: 
+alwaysApply: false
+---
+kaoshixing/
+│
+├── main.py                  # 主程序入口
+├── requirements.txt         # 依赖包
+│
+├── core/                    # 核心功能模块
+│   ├── __init__.py
+│   ├── driver.py            # WebDriver管理
+│   ├── profile_manager.py   # Chrome配置文件管理
+│   └── session.py           # 会话管理
+│
+├── config/                  # 配置管理
+│   ├── __init__.py
+│   ├── settings.py          # 全局设置
+│   ├── selectors.py         # 页面元素选择器
+│   └── credentials.py       # 用户凭据(可选)
+│
+├── modules/                 # 功能模块
+│   ├── __init__.py
+│   ├── login.py             # 登录模块
+│   ├── paper.py             # 试卷管理
+│   └── question.py          # 题目管理
+│
+├── pages/                   # 页面对象模式
+│   ├── __init__.py
+│   ├── base_page.py         # 基础页面类
+│   ├── login_page.py        # 登录页面
+│   ├── paper_page.py        # 试卷页面
+│   └── question_page.py     # 题目页面
+│
+├── ui/                      # 用户界面
+│   ├── __init__.py
+│   ├── cli.py               # 命令行界面
+│   ├── gui.py               # 图形用户界面(使用PyQt或tkinter)
+│   └── templates/           # GUI模板
+│
+└── utils/                   # 工具函数
+    ├── __init__.py
+    ├── logger.py            # 日志工具
+    ├── exceptions.py        # 自定义异常
+    └── helpers.py           # 辅助函数
+
+graph TD
+    A[main.py - 程序入口] --> B[core模块]
+    A --> C[ui模块]
+    B --> D[WebDriver管理]
+    B --> E[用户配置文件管理]
+    B --> F[Session管理]
+    
+    C --> G[GUI界面]
+    C --> H[命令行界面]
+    
+    A --> I[modules模块]
+    I --> J[登录模块]
+    I --> K[试卷管理模块]
+    I --> L[题目管理模块]
+    
+    A --> M[config模块]
+    M --> N[全局配置]
+    M --> O[元素选择器配置]
+    M --> P[用户凭据配置]
+    
+    A --> Q[utils模块]
+    Q --> R[日志工具]
+    Q --> S[异常处理]
+    Q --> T[辅助函数]
+    
+    style A fill:#f96,stroke:#333
+    style B fill:#9cf,stroke:#333
+    style C fill:#9cf,stroke:#333
+    style I fill:#9cf,stroke:#333
+    style M fill:#9cf,stroke:#333
+    style Q fill:#9cf,stroke:#333
+
+
+
+
+
+
+
+
+

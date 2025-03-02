@@ -962,3 +962,78 @@ Stacktrace:
 
 2025-03-02 18:31:14,152 - ERROR - 导航到试卷创建页面失败，程序退出
 2025-03-02 18:39:25,148 - INFO - 浏览器已关闭
+2025-03-02 18:54:53,695 - INFO - 未找到配置文件或凭据，请输入登录信息
+2025-03-02 18:58:00,200 - INFO - 未找到配置文件或凭据，请输入登录信息
+2025-03-02 18:58:15,713 - INFO - 使用全新的浏览器实例，不加载现有配置文件
+2025-03-02 18:58:15,715 - INFO - 创建临时用户数据目录: C:\Users\LYFRIE~1\AppData\Local\Temp\tmpbewak16m
+2025-03-02 18:58:15,715 - INFO - 初始化Chrome驱动...
+2025-03-02 18:58:17,964 - INFO - 测试导航到百度...
+2025-03-02 18:58:22,994 - ERROR - 导航到百度失败: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=133.0.6943.142)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6F8A2C6A5+28789]
+	(No symbol) [0x00007FF6F8995B20]
+	(No symbol) [0x00007FF6F8828F9A]
+	(No symbol) [0x00007FF6F8814D75]
+	(No symbol) [0x00007FF6F8839784]
+	(No symbol) [0x00007FF6F88AF0BF]
+	(No symbol) [0x00007FF6F88CF0D2]
+	(No symbol) [0x00007FF6F88A7103]
+	(No symbol) [0x00007FF6F886FFC0]
+	(No symbol) [0x00007FF6F8871273]
+	GetHandleVerifier [0x00007FF6F8D71AED+3458237]
+	GetHandleVerifier [0x00007FF6F8D8829C+3550316]
+	GetHandleVerifier [0x00007FF6F8D7DB9D+3507565]
+	GetHandleVerifier [0x00007FF6F8AF2C6A+841274]
+	(No symbol) [0x00007FF6F89A09EF]
+	(No symbol) [0x00007FF6F899CB34]
+	(No symbol) [0x00007FF6F899CCD6]
+	(No symbol) [0x00007FF6F898C119]
+	BaseThreadInitThunk [0x00007FFB803F259D+29]
+	RtlUserThreadStart [0x00007FFB8270AF38+40]
+
+2025-03-02 18:58:22,998 - INFO - 尝试导航到Google...
+2025-03-02 18:58:22,999 - ERROR - 导航到Google也失败: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF6F8A2C6A5+28789]
+	(No symbol) [0x00007FF6F8995B20]
+	(No symbol) [0x00007FF6F8828DCC]
+	(No symbol) [0x00007FF6F886F1CF]
+	(No symbol) [0x00007FF6F88A71F2]
+	(No symbol) [0x00007FF6F88A1B89]
+	(No symbol) [0x00007FF6F88A0C39]
+	(No symbol) [0x00007FF6F87F5595]
+	GetHandleVerifier [0x00007FF6F8D71AED+3458237]
+	GetHandleVerifier [0x00007FF6F8D8829C+3550316]
+	GetHandleVerifier [0x00007FF6F8D7DB9D+3507565]
+	GetHandleVerifier [0x00007FF6F8AF2C6A+841274]
+	(No symbol) [0x00007FF6F89A09EF]
+	(No symbol) [0x00007FF6F87F41AE]
+	GetHandleVerifier [0x00007FF6F8DF66A8+4001912]
+	BaseThreadInitThunk [0x00007FFB803F259D+29]
+	RtlUserThreadStart [0x00007FFB8270AF38+40]
+
+2025-03-02 18:58:23,002 - INFO - Chrome浏览器驱动初始化成功
+2025-03-02 18:58:23,004 - ERROR - 加载Cookie时出错: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF6F8A2C6A5+28789]
+	(No symbol) [0x00007FF6F8995B20]
+	(No symbol) [0x00007FF6F8828DCC]
+	(No symbol) [0x00007FF6F886F1CF]
+	(No symbol) [0x00007FF6F88A71F2]
+	(No symbol) [0x00007FF6F88A1B89]
+	(No symbol) [0x00007FF6F88A0C39]
+	(No symbol) [0x00007FF6F87F5595]
+	GetHandleVerifier [0x00007FF6F8D71AED+3458237]
+	GetHandleVerifier [0x00007FF6F8D8829C+3550316]
+	GetHandleVerifier [0x00007FF6F8D7DB9D+3507565]
+	GetHandleVerifier [0x00007FF6F8AF2C6A+841274]
+	(No symbol) [0x00007FF6F89A09EF]
+	(No symbol) [0x00007FF6F87F41AE]
+	GetHandleVerifier [0x00007FF6F8DF66A8+4001912]
+	BaseThreadInitThunk [0x00007FFB803F259D+29]
+	RtlUserThreadStart [0x00007FFB8270AF38+40]
+
+2025-03-02 18:58:23,007 - ERROR - 加载Cookie失败，程序退出
+2025-03-02 18:58:25,190 - INFO - 浏览器已关闭
