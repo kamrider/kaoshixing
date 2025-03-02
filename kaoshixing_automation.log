@@ -710,3 +710,255 @@ Stacktrace:
 	BaseThreadInitThunk [0x00007FFB803F259D+29]
 	RtlUserThreadStart [0x00007FFB8270AF38+40]
 
+2025-03-02 18:15:22,214 - INFO - 找到Chrome配置文件路径: C:\Users\ly frienk\AppData\Local\Google\Chrome\User Data
+2025-03-02 18:15:22,215 - INFO - 使用配置文件: Profile 2
+2025-03-02 18:15:22,215 - INFO - 正在下载ChromeDriver 133.0.6943.141...
+2025-03-02 18:15:23,046 - INFO - ChromeDriver 133.0.6943.141 下载并解压成功
+2025-03-02 18:15:23,048 - INFO - 使用下载的ChromeDriver: C:\Users\ly frienk\.wdm\drivers\chromedriver\win64\133.0.6943.141\chromedriver.exe
+2025-03-02 18:15:26,305 - ERROR - Chrome浏览器驱动初始化失败: Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir
+Stacktrace:
+	GetHandleVerifier [0x00007FF7AF89C6A5+28789]
+	(No symbol) [0x00007FF7AF805B20]
+	(No symbol) [0x00007FF7AF698F9A]
+	(No symbol) [0x00007FF7AF6D55C4]
+	(No symbol) [0x00007FF7AF6D15AD]
+	(No symbol) [0x00007FF7AF72555B]
+	(No symbol) [0x00007FF7AF724B30]
+	(No symbol) [0x00007FF7AF717103]
+	(No symbol) [0x00007FF7AF6DFFC0]
+	(No symbol) [0x00007FF7AF6E1273]
+	GetHandleVerifier [0x00007FF7AFBE1AED+3458237]
+	GetHandleVerifier [0x00007FF7AFBF829C+3550316]
+	GetHandleVerifier [0x00007FF7AFBEDB9D+3507565]
+	GetHandleVerifier [0x00007FF7AF962C6A+841274]
+	(No symbol) [0x00007FF7AF8109EF]
+	(No symbol) [0x00007FF7AF80CB34]
+	(No symbol) [0x00007FF7AF80CCD6]
+	(No symbol) [0x00007FF7AF7FC119]
+	BaseThreadInitThunk [0x00007FFB803F259D+29]
+	RtlUserThreadStart [0x00007FFB8270AF38+40]
+
+2025-03-02 18:15:26,308 - ERROR - 程序执行出错: Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir
+Stacktrace:
+	GetHandleVerifier [0x00007FF7AF89C6A5+28789]
+	(No symbol) [0x00007FF7AF805B20]
+	(No symbol) [0x00007FF7AF698F9A]
+	(No symbol) [0x00007FF7AF6D55C4]
+	(No symbol) [0x00007FF7AF6D15AD]
+	(No symbol) [0x00007FF7AF72555B]
+	(No symbol) [0x00007FF7AF724B30]
+	(No symbol) [0x00007FF7AF717103]
+	(No symbol) [0x00007FF7AF6DFFC0]
+	(No symbol) [0x00007FF7AF6E1273]
+	GetHandleVerifier [0x00007FF7AFBE1AED+3458237]
+	GetHandleVerifier [0x00007FF7AFBF829C+3550316]
+	GetHandleVerifier [0x00007FF7AFBEDB9D+3507565]
+	GetHandleVerifier [0x00007FF7AF962C6A+841274]
+	(No symbol) [0x00007FF7AF8109EF]
+	(No symbol) [0x00007FF7AF80CB34]
+	(No symbol) [0x00007FF7AF80CCD6]
+	(No symbol) [0x00007FF7AF7FC119]
+	BaseThreadInitThunk [0x00007FFB803F259D+29]
+	RtlUserThreadStart [0x00007FFB8270AF38+40]
+
+2025-03-02 18:15:51,763 - INFO - 找到Chrome配置文件路径: C:\Users\ly frienk\AppData\Local\Google\Chrome\User Data
+2025-03-02 18:15:51,764 - INFO - 使用配置文件: Profile 2
+2025-03-02 18:15:51,765 - INFO - 正在下载ChromeDriver 133.0.6943.141...
+2025-03-02 18:15:52,587 - INFO - ChromeDriver 133.0.6943.141 下载并解压成功
+2025-03-02 18:15:52,589 - INFO - 使用下载的ChromeDriver: C:\Users\ly frienk\.wdm\drivers\chromedriver\win64\133.0.6943.141\chromedriver.exe
+2025-03-02 18:15:56,706 - ERROR - Chrome浏览器驱动初始化失败: Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir
+Stacktrace:
+	GetHandleVerifier [0x00007FF65722C6A5+28789]
+	(No symbol) [0x00007FF657195B20]
+	(No symbol) [0x00007FF657028F9A]
+	(No symbol) [0x00007FF6570655C4]
+	(No symbol) [0x00007FF6570615AD]
+	(No symbol) [0x00007FF6570B555B]
+	(No symbol) [0x00007FF6570B4B30]
+	(No symbol) [0x00007FF6570A7103]
+	(No symbol) [0x00007FF65706FFC0]
+	(No symbol) [0x00007FF657071273]
+	GetHandleVerifier [0x00007FF657571AED+3458237]
+	GetHandleVerifier [0x00007FF65758829C+3550316]
+	GetHandleVerifier [0x00007FF65757DB9D+3507565]
+	GetHandleVerifier [0x00007FF6572F2C6A+841274]
+	(No symbol) [0x00007FF6571A09EF]
+	(No symbol) [0x00007FF65719CB34]
+	(No symbol) [0x00007FF65719CCD6]
+	(No symbol) [0x00007FF65718C119]
+	BaseThreadInitThunk [0x00007FFB803F259D+29]
+	RtlUserThreadStart [0x00007FFB8270AF38+40]
+
+2025-03-02 18:15:56,710 - ERROR - 程序执行出错: Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir
+Stacktrace:
+	GetHandleVerifier [0x00007FF65722C6A5+28789]
+	(No symbol) [0x00007FF657195B20]
+	(No symbol) [0x00007FF657028F9A]
+	(No symbol) [0x00007FF6570655C4]
+	(No symbol) [0x00007FF6570615AD]
+	(No symbol) [0x00007FF6570B555B]
+	(No symbol) [0x00007FF6570B4B30]
+	(No symbol) [0x00007FF6570A7103]
+	(No symbol) [0x00007FF65706FFC0]
+	(No symbol) [0x00007FF657071273]
+	GetHandleVerifier [0x00007FF657571AED+3458237]
+	GetHandleVerifier [0x00007FF65758829C+3550316]
+	GetHandleVerifier [0x00007FF65757DB9D+3507565]
+	GetHandleVerifier [0x00007FF6572F2C6A+841274]
+	(No symbol) [0x00007FF6571A09EF]
+	(No symbol) [0x00007FF65719CB34]
+	(No symbol) [0x00007FF65719CCD6]
+	(No symbol) [0x00007FF65718C119]
+	BaseThreadInitThunk [0x00007FFB803F259D+29]
+	RtlUserThreadStart [0x00007FFB8270AF38+40]
+
+2025-03-02 18:20:12,046 - INFO - 找到Chrome配置文件路径: C:\Users\ly frienk\AppData\Local\Google\Chrome\User Data
+2025-03-02 18:20:12,047 - INFO - 使用配置文件: Profile 2
+2025-03-02 18:20:12,048 - INFO - 尝试使用系统中的ChromeDriver
+2025-03-02 18:20:16,825 - ERROR - Chrome浏览器驱动初始化失败: Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir
+Stacktrace:
+	GetHandleVerifier [0x00007FF6F8A2C6A5+28789]
+	(No symbol) [0x00007FF6F8995B20]
+	(No symbol) [0x00007FF6F8828F9A]
+	(No symbol) [0x00007FF6F88655C4]
+	(No symbol) [0x00007FF6F88615AD]
+	(No symbol) [0x00007FF6F88B555B]
+	(No symbol) [0x00007FF6F88B4B30]
+	(No symbol) [0x00007FF6F88A7103]
+	(No symbol) [0x00007FF6F886FFC0]
+	(No symbol) [0x00007FF6F8871273]
+	GetHandleVerifier [0x00007FF6F8D71AED+3458237]
+	GetHandleVerifier [0x00007FF6F8D8829C+3550316]
+	GetHandleVerifier [0x00007FF6F8D7DB9D+3507565]
+	GetHandleVerifier [0x00007FF6F8AF2C6A+841274]
+	(No symbol) [0x00007FF6F89A09EF]
+	(No symbol) [0x00007FF6F899CB34]
+	(No symbol) [0x00007FF6F899CCD6]
+	(No symbol) [0x00007FF6F898C119]
+	BaseThreadInitThunk [0x00007FFB803F259D+29]
+	RtlUserThreadStart [0x00007FFB8270AF38+40]
+
+2025-03-02 18:20:16,829 - ERROR - 程序执行出错: Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir
+Stacktrace:
+	GetHandleVerifier [0x00007FF6F8A2C6A5+28789]
+	(No symbol) [0x00007FF6F8995B20]
+	(No symbol) [0x00007FF6F8828F9A]
+	(No symbol) [0x00007FF6F88655C4]
+	(No symbol) [0x00007FF6F88615AD]
+	(No symbol) [0x00007FF6F88B555B]
+	(No symbol) [0x00007FF6F88B4B30]
+	(No symbol) [0x00007FF6F88A7103]
+	(No symbol) [0x00007FF6F886FFC0]
+	(No symbol) [0x00007FF6F8871273]
+	GetHandleVerifier [0x00007FF6F8D71AED+3458237]
+	GetHandleVerifier [0x00007FF6F8D8829C+3550316]
+	GetHandleVerifier [0x00007FF6F8D7DB9D+3507565]
+	GetHandleVerifier [0x00007FF6F8AF2C6A+841274]
+	(No symbol) [0x00007FF6F89A09EF]
+	(No symbol) [0x00007FF6F899CB34]
+	(No symbol) [0x00007FF6F899CCD6]
+	(No symbol) [0x00007FF6F898C119]
+	BaseThreadInitThunk [0x00007FFB803F259D+29]
+	RtlUserThreadStart [0x00007FFB8270AF38+40]
+
+2025-03-02 18:21:59,778 - INFO - 使用全新的浏览器实例，不加载现有配置文件
+2025-03-02 18:21:59,779 - INFO - 创建临时用户数据目录: C:\Users\LYFRIE~1\AppData\Local\Temp\tmpn80jhiuw
+2025-03-02 18:21:59,779 - INFO - 初始化Chrome驱动...
+2025-03-02 18:22:02,241 - INFO - 测试导航到百度...
+2025-03-02 18:22:08,606 - INFO - 当前页面标题: 百度一下，你就知道
+2025-03-02 18:22:08,611 - INFO - 成功导航到百度，浏览器工作正常
+2025-03-02 18:22:08,611 - INFO - Chrome浏览器驱动初始化成功
+2025-03-02 18:29:59,985 - INFO - 用户选择不继续，程序退出
+2025-03-02 18:30:02,423 - INFO - 浏览器已关闭
+2025-03-02 18:30:09,172 - INFO - 使用全新的浏览器实例，不加载现有配置文件
+2025-03-02 18:30:09,173 - INFO - 创建临时用户数据目录: C:\Users\LYFRIE~1\AppData\Local\Temp\tmpsy85imog
+2025-03-02 18:30:09,175 - INFO - 初始化Chrome驱动...
+2025-03-02 18:30:11,566 - INFO - 测试导航到百度...
+2025-03-02 18:30:17,292 - ERROR - 导航到百度失败: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=133.0.6943.142)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6F8A2C6A5+28789]
+	(No symbol) [0x00007FF6F8995B20]
+	(No symbol) [0x00007FF6F8828F9A]
+	(No symbol) [0x00007FF6F8814D75]
+	(No symbol) [0x00007FF6F8839784]
+	(No symbol) [0x00007FF6F88AF0BF]
+	(No symbol) [0x00007FF6F88CF0D2]
+	(No symbol) [0x00007FF6F88A7103]
+	(No symbol) [0x00007FF6F886FFC0]
+	(No symbol) [0x00007FF6F8871273]
+	GetHandleVerifier [0x00007FF6F8D71AED+3458237]
+	GetHandleVerifier [0x00007FF6F8D8829C+3550316]
+	GetHandleVerifier [0x00007FF6F8D7DB9D+3507565]
+	GetHandleVerifier [0x00007FF6F8AF2C6A+841274]
+	(No symbol) [0x00007FF6F89A09EF]
+	(No symbol) [0x00007FF6F899CB34]
+	(No symbol) [0x00007FF6F899CCD6]
+	(No symbol) [0x00007FF6F898C119]
+	BaseThreadInitThunk [0x00007FFB803F259D+29]
+	RtlUserThreadStart [0x00007FFB8270AF38+40]
+
+2025-03-02 18:30:17,298 - INFO - 尝试导航到Google...
+2025-03-02 18:30:17,300 - ERROR - 导航到Google也失败: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF6F8A2C6A5+28789]
+	(No symbol) [0x00007FF6F8995B20]
+	(No symbol) [0x00007FF6F8828DCC]
+	(No symbol) [0x00007FF6F886F1CF]
+	(No symbol) [0x00007FF6F88A71F2]
+	(No symbol) [0x00007FF6F88A1B89]
+	(No symbol) [0x00007FF6F88A0C39]
+	(No symbol) [0x00007FF6F87F5595]
+	GetHandleVerifier [0x00007FF6F8D71AED+3458237]
+	GetHandleVerifier [0x00007FF6F8D8829C+3550316]
+	GetHandleVerifier [0x00007FF6F8D7DB9D+3507565]
+	GetHandleVerifier [0x00007FF6F8AF2C6A+841274]
+	(No symbol) [0x00007FF6F89A09EF]
+	(No symbol) [0x00007FF6F87F41AE]
+	GetHandleVerifier [0x00007FF6F8DF66A8+4001912]
+	BaseThreadInitThunk [0x00007FFB803F259D+29]
+	RtlUserThreadStart [0x00007FFB8270AF38+40]
+
+2025-03-02 18:30:17,303 - INFO - Chrome浏览器驱动初始化成功
+2025-03-02 18:30:24,753 - INFO - 用户选择不继续，程序退出
+2025-03-02 18:30:26,886 - INFO - 浏览器已关闭
+2025-03-02 18:30:31,788 - INFO - 使用全新的浏览器实例，不加载现有配置文件
+2025-03-02 18:30:31,789 - INFO - 创建临时用户数据目录: C:\Users\LYFRIE~1\AppData\Local\Temp\tmpn44c_2wm
+2025-03-02 18:30:31,790 - INFO - 初始化Chrome驱动...
+2025-03-02 18:30:34,100 - INFO - 测试导航到百度...
+2025-03-02 18:30:41,788 - INFO - 当前页面标题: 百度一下，你就知道
+2025-03-02 18:30:41,793 - INFO - 成功导航到百度，浏览器工作正常
+2025-03-02 18:30:41,794 - INFO - Chrome浏览器驱动初始化成功
+2025-03-02 18:30:46,137 - INFO - 准备导航到试卷创建页面: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-02 18:30:46,138 - INFO - 尝试导航到考试星首页...
+2025-03-02 18:30:52,168 - INFO - 当前页面URL: https://v.kaoshixing.com/
+2025-03-02 18:30:52,173 - INFO - 当前页面标题: 404 Not Found
+2025-03-02 18:30:52,189 - INFO - 导航到试卷创建页面: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-02 18:31:14,144 - ERROR - 导航到试卷创建页面失败: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=133.0.6943.142)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6F8A2C6A5+28789]
+	(No symbol) [0x00007FF6F8995B20]
+	(No symbol) [0x00007FF6F8828F9A]
+	(No symbol) [0x00007FF6F8814D75]
+	(No symbol) [0x00007FF6F8839784]
+	(No symbol) [0x00007FF6F88AF0BF]
+	(No symbol) [0x00007FF6F88CF0D2]
+	(No symbol) [0x00007FF6F88A7103]
+	(No symbol) [0x00007FF6F886FFC0]
+	(No symbol) [0x00007FF6F8871273]
+	GetHandleVerifier [0x00007FF6F8D71AED+3458237]
+	GetHandleVerifier [0x00007FF6F8D8829C+3550316]
+	GetHandleVerifier [0x00007FF6F8D7DB9D+3507565]
+	GetHandleVerifier [0x00007FF6F8AF2C6A+841274]
+	(No symbol) [0x00007FF6F89A09EF]
+	(No symbol) [0x00007FF6F899CB34]
+	(No symbol) [0x00007FF6F899CCD6]
+	(No symbol) [0x00007FF6F898C119]
+	BaseThreadInitThunk [0x00007FFB803F259D+29]
+	RtlUserThreadStart [0x00007FFB8270AF38+40]
+
+2025-03-02 18:31:14,152 - ERROR - 导航到试卷创建页面失败，程序退出
+2025-03-02 18:39:25,148 - INFO - 浏览器已关闭

@@ -62,28 +62,16 @@ class KaoshixingAutomation:
             return None
         
     def setup(self):
-        """设置浏览器驱动，使用Chrome浏览器的特定用户配置文件，并模拟真人行为"""
+        """设置浏览器驱动，使用全新的浏览器实例，并模拟真人行为"""
         try:
             options = webdriver.ChromeOptions()
             options.add_argument("--start-maximized")  # 最大化窗口
             
-            # 使用现有的Chrome配置文件
-            # 获取当前用户的Chrome配置文件路径
-            user_profile = os.path.expanduser('~')
-            chrome_profile_path = os.path.join(user_profile, 'AppData', 'Local', 'Google', 'Chrome', 'User Data')
-            
-            if os.path.exists(chrome_profile_path):
-                logger.info(f"找到Chrome配置文件路径: {chrome_profile_path}")
-                options.add_argument(f"user-data-dir={chrome_profile_path}")
-                
-                # 使用"Profile 2"配置文件，根据您提供的信息
-                options.add_argument("profile-directory=Profile 2")
-                logger.info("使用配置文件: Profile 2")
-            else:
-                logger.warning(f"未找到Chrome配置文件路径: {chrome_profile_path}")
+            # 不使用现有的Chrome配置文件，而是创建一个新的实例
+            # 这样可以避免配置文件冲突
+            logger.info("使用全新的浏览器实例，不加载现有配置文件")
             
             # 添加模拟真人行为的设置
-            
             # 1. 禁用自动化控制特征
             options.add_experimental_option("excludeSwitches", ["enable-automation"])
             options.add_experimental_option("useAutomationExtension", False)
@@ -101,17 +89,15 @@ class KaoshixingAutomation:
             options.add_argument("--disable-extensions")
             options.add_argument("--disable-gpu")
             
-            # 手动下载ChromeDriver
-            driver_path = self.download_chromedriver()
+            # 6. 添加一个临时用户数据目录
+            import tempfile
+            temp_dir = tempfile.mkdtemp()
+            logger.info(f"创建临时用户数据目录: {temp_dir}")
+            options.add_argument(f"--user-data-dir={temp_dir}")
             
-            if driver_path and os.path.exists(driver_path):
-                logger.info(f"使用下载的ChromeDriver: {driver_path}")
-                service = Service(driver_path)
-                self.driver = webdriver.Chrome(service=service, options=options)
-            else:
-                # 尝试使用系统中的ChromeDriver
-                logger.info("尝试使用系统中的ChromeDriver")
-                self.driver = webdriver.Chrome(options=options)
+            # 尝试直接初始化Chrome驱动
+            logger.info("初始化Chrome驱动...")
+            self.driver = webdriver.Chrome(options=options)
             
             # 进一步修改webdriver属性，防止被检测
             self.driver.execute_cdp_cmd("Page.addScriptToEvaluateOnNewDocument", {
@@ -149,7 +135,30 @@ class KaoshixingAutomation:
                 """
             })
             
-            logger.info("Chrome浏览器驱动初始化成功，已设置模拟真人行为")
+            # 测试导航到百度，确认浏览器能正常工作
+            logger.info("测试导航到百度...")
+            try:
+                self.driver.get("https://www.baidu.com")
+                time.sleep(3)
+                logger.info(f"当前页面标题: {self.driver.title}")
+                if "百度" in self.driver.title:
+                    logger.info("成功导航到百度，浏览器工作正常")
+                else:
+                    logger.warning(f"导航到百度后页面标题不包含'百度'，当前标题: {self.driver.title}")
+            except Exception as e:
+                logger.error(f"导航到百度失败: {e}")
+                
+                # 尝试导航到其他网站
+                try:
+                    logger.info("尝试导航到Google...")
+                    self.driver.get("https://www.google.com")
+                    time.sleep(3)
+                    logger.info(f"当前页面标题: {self.driver.title}")
+                except Exception as e2:
+                    logger.error(f"导航到Google也失败: {e2}")
+            
+            logger.info("Chrome浏览器驱动初始化成功")
+            return True
         except Exception as e:
             logger.error(f"Chrome浏览器驱动初始化失败: {e}")
             raise
@@ -157,59 +166,151 @@ class KaoshixingAutomation:
     def navigate_to_paper_create(self, url="https://v.kaoshixing.com/admin/paper/#/create?source=toLib"):
         """导航到试卷创建页面并点击特定元素"""
         try:
-            self.driver.get(url)
-            logger.info(f"打开试卷创建页面: {url}")
+            logger.info(f"准备导航到试卷创建页面: {url}")
+            
+            # 直接尝试导航到考试星首页
+            try:
+                logger.info("尝试导航到考试星首页...")
+                self.driver.get("https://v.kaoshixing.com/")
+                time.sleep(5)
+                logger.info(f"当前页面URL: {self.driver.current_url}")
+                logger.info(f"当前页面标题: {self.driver.title}")
+                
+                # 检查是否成功导航
+                if "kaoshixing" not in self.driver.current_url:
+                    logger.error("导航到考试星首页失败，当前URL不包含'kaoshixing'")
+                    
+                    # 尝试使用JavaScript导航
+                    logger.info("尝试使用JavaScript导航...")
+                    self.driver.execute_script("window.location.href='https://v.kaoshixing.com/';")
+                    time.sleep(5)
+                    logger.info(f"JavaScript导航后URL: {self.driver.current_url}")
+            except Exception as e:
+                logger.error(f"导航到考试星首页失败: {e}")
+                return False
+            
+            # 检查是否需要登录
+            if "登录" in self.driver.title or "login" in self.driver.current_url.lower():
+                logger.warning("检测到需要登录，请手动登录后按Enter继续...")
+                input("请在浏览器中完成登录，然后按Enter继续...")
+            
+            # 然后再导航到试卷创建页面
+            try:
+                logger.info(f"导航到试卷创建页面: {url}")
+                self.driver.get(url)
+                time.sleep(5)
+                logger.info(f"当前页面URL: {self.driver.current_url}")
+                logger.info(f"当前页面标题: {self.driver.title}")
+                
+                # 检查是否成功导航
+                if "paper" not in self.driver.current_url and "create" not in self.driver.current_url:
+                    logger.error("导航到试卷创建页面失败")
+                    
+                    # 尝试使用JavaScript导航
+                    logger.info("尝试使用JavaScript导航到试卷创建页面...")
+                    self.driver.execute_script(f"window.location.href='{url}';")
+                    time.sleep(5)
+                    logger.info(f"JavaScript导航后URL: {self.driver.current_url}")
+            except Exception as e:
+                logger.error(f"导航到试卷创建页面失败: {e}")
+                return False
             
             # 等待页面完全加载
             logger.info("等待页面完全加载 (5秒)...")
             time.sleep(5)
             
+            # 检查页面是否正确加载
+            page_source = self.driver.page_source
+            if "试卷" in page_source or "考试" in page_source:
+                logger.info("页面内容包含关键词，页面可能已正确加载")
+            else:
+                logger.warning("页面内容不包含预期关键词，可能未正确加载")
+                logger.info("页面源码前500字符: " + page_source[:500])
+                
+                # 尝试再次导航
+                logger.info("尝试再次导航到试卷创建页面...")
+                self.driver.get(url)
+                time.sleep(5)
+            
             # 点击设置按钮 - 只使用一种方法
             logger.info("尝试点击设置按钮...")
-            setting_button = WebDriverWait(self.driver, 10).until(
-                EC.element_to_be_clickable((By.CSS_SELECTOR, "#paper-id > form > section > div > header > div.right.bottom > div.right-setting > span:nth-child(2)"))
-            )
-            setting_button.click()
-            logger.info("成功点击设置按钮")
+            try:
+                setting_button = WebDriverWait(self.driver, 10).until(
+                    EC.element_to_be_clickable((By.CSS_SELECTOR, "#paper-id > form > section > div > header > div.right.bottom > div.right-setting > span:nth-child(2)"))
+                )
+                setting_button.click()
+                logger.info("成功点击设置按钮")
+            except Exception as e:
+                logger.error(f"点击设置按钮失败: {e}")
+                logger.info("尝试使用JavaScript点击设置按钮")
+                try:
+                    self.driver.execute_script("""
+                        var settingBtns = document.querySelectorAll("span.el-icon-setting, .setting-btn, .icon-setting");
+                        if (settingBtns.length > 0) {
+                            settingBtns[0].click();
+                        }
+                    """)
+                    logger.info("使用JavaScript点击设置按钮")
+                except Exception as js_e:
+                    logger.error(f"使用JavaScript点击设置按钮失败: {js_e}")
             
             # 等待设置对话框出现
             time.sleep(2)
             
             # 检查复选框当前状态
-            checkbox = WebDriverWait(self.driver, 10).until(
-                EC.presence_of_element_located((By.CSS_SELECTOR, "#paper-id > div:nth-child(11) > div > div > div.el-dialog__body > div.setting-item.paper-feature > div.setting-content > div:nth-child(3) > label > span.el-checkbox__input > span"))
-            )
-            
-            # 获取复选框的父元素（label）
-            checkbox_label = checkbox.find_element(By.XPATH, "./../../..")
-            
-            # 检查复选框是否已经被选中
-            is_checked = "is-checked" in checkbox_label.get_attribute("class")
-            logger.info(f"复选框当前状态: {'已选中' if is_checked else '未选中'}")
-            
-            # 如果未选中，则点击选中
-            if not is_checked:
-                checkbox_label.click()
-                logger.info("点击复选框使其选中")
-                time.sleep(1)
+            try:
+                checkbox = WebDriverWait(self.driver, 10).until(
+                    EC.presence_of_element_located((By.CSS_SELECTOR, "#paper-id > div:nth-child(11) > div > div > div.el-dialog__body > div.setting-item.paper-feature > div.setting-content > div:nth-child(3) > label > span.el-checkbox__input > span"))
+                )
                 
-                # 再次检查状态确认是否选中
-                is_checked_after = "is-checked" in checkbox_label.get_attribute("class")
-                logger.info(f"点击后复选框状态: {'已选中' if is_checked_after else '未选中'}")
-            
-            # 使用您提供的精确选择器点击确认按钮
-            confirm_button_selector = "#paper-id > div:nth-child(11) > div > div > div.el-dialog__footer > div > button.el-button.el-button--primary.el-button--default.confirm-button"
-            confirm_button = WebDriverWait(self.driver, 10).until(
-                EC.element_to_be_clickable((By.CSS_SELECTOR, confirm_button_selector))
-            )
-            confirm_button.click()
-            logger.info("点击确认按钮")
+                # 获取复选框的父元素（label）
+                checkbox_label = checkbox.find_element(By.XPATH, "./../../..")
+                
+                # 检查复选框是否已经被选中
+                is_checked = "is-checked" in checkbox_label.get_attribute("class")
+                logger.info(f"复选框当前状态: {'已选中' if is_checked else '未选中'}")
+                
+                # 如果未选中，则点击选中
+                if not is_checked:
+                    checkbox_label.click()
+                    logger.info("点击复选框使其选中")
+                    time.sleep(1)
+                    
+                    # 再次检查状态确认是否选中
+                    is_checked_after = "is-checked" in checkbox_label.get_attribute("class")
+                    logger.info(f"点击后复选框状态: {'已选中' if is_checked_after else '未选中'}")
+                
+                # 使用您提供的精确选择器点击确认按钮
+                confirm_button_selector = "#paper-id > div:nth-child(11) > div > div > div.el-dialog__footer > div > button.el-button.el-button--primary.el-button--default.confirm-button"
+                confirm_button = WebDriverWait(self.driver, 10).until(
+                    EC.element_to_be_clickable((By.CSS_SELECTOR, confirm_button_selector))
+                )
+                confirm_button.click()
+                logger.info("点击确认按钮")
+            except Exception as e:
+                logger.error(f"设置复选框操作失败: {e}")
+                logger.info("尝试使用JavaScript关闭对话框")
+                try:
+                    self.driver.execute_script("""
+                        var confirmBtns = document.querySelectorAll("button.el-button--primary");
+                        for (var i = 0; i < confirmBtns.length; i++) {
+                            if (confirmBtns[i].textContent.includes("确定") || confirmBtns[i].textContent.includes("确认")) {
+                                confirmBtns[i].click();
+                                break;
+                            }
+                        }
+                    """)
+                    logger.info("使用JavaScript点击确认按钮")
+                except Exception as js_e:
+                    logger.error(f"使用JavaScript点击确认按钮失败: {js_e}")
             
             time.sleep(2)
             logger.info("设置操作完成")
+            return True
             
         except Exception as e:
             logger.error(f"在试卷创建页面点击元素时出错: {e}")
+            return False
     
     def fill_paper_basic_info(self, title="自动创建的试卷", category="默认分类", description="这是一个通过自动化脚本创建的试卷"):
         """填写试卷基本信息"""
@@ -567,10 +668,27 @@ def main():
     
     try:
         # 设置浏览器驱动
-        automation.setup()
+        if not automation.setup():
+            logger.error("浏览器驱动设置失败，程序退出")
+            return
+        
+        # 询问用户是否继续
+        proceed = input("浏览器已启动，是否继续导航到考试星网站？(y/n): ")
+        if proceed.lower() != 'y':
+            logger.info("用户选择不继续，程序退出")
+            return
         
         # 导航到试卷创建页面并点击特定元素
-        automation.navigate_to_paper_create()
+        if not automation.navigate_to_paper_create():
+            logger.error("导航到试卷创建页面失败，程序退出")
+            input("按Enter键退出...")
+            return
+        
+        # 询问用户是否继续创建试卷
+        proceed = input("已导航到试卷创建页面，是否继续创建试卷？(y/n): ")
+        if proceed.lower() != 'y':
+            logger.info("用户选择不继续创建试卷，程序退出")
+            return
         
         # 获取用户输入
         topic_count = int(input("请输入需要创建的大题数量: "))
@@ -583,6 +701,8 @@ def main():
         
     except Exception as e:
         logger.error(f"程序执行出错: {e}")
+        import traceback
+        logger.error(traceback.format_exc())
     finally:
         # 关闭浏览器
         automation.close()
