@@ -1,0 +1,175 @@
+2025-03-02 19:40:27 - core.profile_manager - INFO - Chrome用户数据目录: C:\Users\ly frienk\AppData\Local\Google\Chrome\User Data
+2025-03-02 19:40:27 - core.profile_manager - INFO - 找到 3 个Chrome用户配置文件
+2025-03-02 19:40:39 - __main__ - INFO - 使用配置文件 'Profile 2' 打开网站: https://www.baidu.com
+2025-03-02 19:40:39 - core.driver - INFO - 使用Chrome用户配置文件: C:\Users\ly frienk\AppData\Local\Google\Chrome\User Data
+2025-03-02 19:40:39 - core.driver - ERROR - 启动Chrome浏览器失败: 'NoneType' object has no attribute 'split'
+2025-03-02 19:40:39 - __main__ - ERROR - 发生错误: 'NoneType' object has no attribute 'split'
+2025-03-02 19:41:03 - core.profile_manager - INFO - Chrome用户数据目录: C:\Users\ly frienk\AppData\Local\Google\Chrome\User Data
+2025-03-02 19:41:03 - core.profile_manager - INFO - 找到 3 个Chrome用户配置文件
+2025-03-02 19:41:07 - __main__ - INFO - 使用配置文件 'Profile 2' 打开网站: https://www.baidu.com
+2025-03-02 19:41:07 - core.driver - INFO - 使用Chrome用户配置文件: C:\Users\ly frienk\AppData\Local\Google\Chrome\User Data
+2025-03-02 19:41:13 - core.driver - ERROR - 启动Chrome浏览器失败: Message: session not created: Chrome failed to start: crashed.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location C:\Program Files\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6F8A2C6A5+28789]
+	(No symbol) [0x00007FF6F8995B20]
+	(No symbol) [0x00007FF6F8828F9A]
+	(No symbol) [0x00007FF6F8865817]
+	(No symbol) [0x00007FF6F88615AD]
+	(No symbol) [0x00007FF6F88B555B]
+	(No symbol) [0x00007FF6F88B4B30]
+	(No symbol) [0x00007FF6F88A7103]
+	(No symbol) [0x00007FF6F886FFC0]
+	(No symbol) [0x00007FF6F8871273]
+	GetHandleVerifier [0x00007FF6F8D71AED+3458237]
+	GetHandleVerifier [0x00007FF6F8D8829C+3550316]
+	GetHandleVerifier [0x00007FF6F8D7DB9D+3507565]
+	GetHandleVerifier [0x00007FF6F8AF2C6A+841274]
+	(No symbol) [0x00007FF6F89A09EF]
+	(No symbol) [0x00007FF6F899CB34]
+	(No symbol) [0x00007FF6F899CCD6]
+	(No symbol) [0x00007FF6F898C119]
+	BaseThreadInitThunk [0x00007FFB803F259D+29]
+	RtlUserThreadStart [0x00007FFB8270AF38+40]
+
+2025-03-02 19:41:13 - __main__ - ERROR - 发生错误: Message: session not created: Chrome failed to start: crashed.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location C:\Program Files\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6F8A2C6A5+28789]
+	(No symbol) [0x00007FF6F8995B20]
+	(No symbol) [0x00007FF6F8828F9A]
+	(No symbol) [0x00007FF6F8865817]
+	(No symbol) [0x00007FF6F88615AD]
+	(No symbol) [0x00007FF6F88B555B]
+	(No symbol) [0x00007FF6F88B4B30]
+	(No symbol) [0x00007FF6F88A7103]
+	(No symbol) [0x00007FF6F886FFC0]
+	(No symbol) [0x00007FF6F8871273]
+	GetHandleVerifier [0x00007FF6F8D71AED+3458237]
+	GetHandleVerifier [0x00007FF6F8D8829C+3550316]
+	GetHandleVerifier [0x00007FF6F8D7DB9D+3507565]
+	GetHandleVerifier [0x00007FF6F8AF2C6A+841274]
+	(No symbol) [0x00007FF6F89A09EF]
+	(No symbol) [0x00007FF6F899CB34]
+	(No symbol) [0x00007FF6F899CCD6]
+	(No symbol) [0x00007FF6F898C119]
+	BaseThreadInitThunk [0x00007FFB803F259D+29]
+	RtlUserThreadStart [0x00007FFB8270AF38+40]
+
+2025-03-02 19:43:06 - core.profile_manager - INFO - Chrome用户数据目录: C:\Users\ly frienk\AppData\Local\Google\Chrome\User Data
+2025-03-02 19:43:06 - core.profile_manager - INFO - 找到 3 个Chrome用户配置文件
+2025-03-02 19:43:15 - __main__ - INFO - 使用配置文件 'Default' 打开网站: https://www.baidu.com
+2025-03-02 19:43:15 - core.driver - INFO - 使用Chrome用户配置文件: Default
+2025-03-02 19:43:20 - core.driver - ERROR - 启动Chrome浏览器失败: Message: session not created: Chrome failed to start: crashed.
+  (chrome not reachable)
+  (The process started from chrome location C:\Program Files\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6F8A2C6A5+28789]
+	(No symbol) [0x00007FF6F8995B20]
+	(No symbol) [0x00007FF6F8828F9A]
+	(No symbol) [0x00007FF6F8865817]
+	(No symbol) [0x00007FF6F88615AD]
+	(No symbol) [0x00007FF6F88B555B]
+	(No symbol) [0x00007FF6F88B4B30]
+	(No symbol) [0x00007FF6F88A7103]
+	(No symbol) [0x00007FF6F886FFC0]
+	(No symbol) [0x00007FF6F8871273]
+	GetHandleVerifier [0x00007FF6F8D71AED+3458237]
+	GetHandleVerifier [0x00007FF6F8D8829C+3550316]
+	GetHandleVerifier [0x00007FF6F8D7DB9D+3507565]
+	GetHandleVerifier [0x00007FF6F8AF2C6A+841274]
+	(No symbol) [0x00007FF6F89A09EF]
+	(No symbol) [0x00007FF6F899CB34]
+	(No symbol) [0x00007FF6F899CCD6]
+	(No symbol) [0x00007FF6F898C119]
+	BaseThreadInitThunk [0x00007FFB803F259D+29]
+	RtlUserThreadStart [0x00007FFB8270AF38+40]
+
+2025-03-02 19:43:20 - __main__ - ERROR - 发生错误: Message: session not created: Chrome failed to start: crashed.
+  (chrome not reachable)
+  (The process started from chrome location C:\Program Files\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6F8A2C6A5+28789]
+	(No symbol) [0x00007FF6F8995B20]
+	(No symbol) [0x00007FF6F8828F9A]
+	(No symbol) [0x00007FF6F8865817]
+	(No symbol) [0x00007FF6F88615AD]
+	(No symbol) [0x00007FF6F88B555B]
+	(No symbol) [0x00007FF6F88B4B30]
+	(No symbol) [0x00007FF6F88A7103]
+	(No symbol) [0x00007FF6F886FFC0]
+	(No symbol) [0x00007FF6F8871273]
+	GetHandleVerifier [0x00007FF6F8D71AED+3458237]
+	GetHandleVerifier [0x00007FF6F8D8829C+3550316]
+	GetHandleVerifier [0x00007FF6F8D7DB9D+3507565]
+	GetHandleVerifier [0x00007FF6F8AF2C6A+841274]
+	(No symbol) [0x00007FF6F89A09EF]
+	(No symbol) [0x00007FF6F899CB34]
+	(No symbol) [0x00007FF6F899CCD6]
+	(No symbol) [0x00007FF6F898C119]
+	BaseThreadInitThunk [0x00007FFB803F259D+29]
+	RtlUserThreadStart [0x00007FFB8270AF38+40]
+
+2025-03-02 19:43:42 - core.profile_manager - INFO - Chrome用户数据目录: C:\Users\ly frienk\AppData\Local\Google\Chrome\User Data
+2025-03-02 19:43:42 - core.profile_manager - INFO - 找到 3 个Chrome用户配置文件
+2025-03-02 19:43:48 - __main__ - INFO - 使用配置文件 'Default' 打开网站: https://www.baidu.com
+2025-03-02 19:43:48 - core.driver - INFO - 使用Chrome用户配置文件: Default
+2025-03-02 19:43:49 - core.driver - INFO - Chrome浏览器启动成功
+2025-03-02 19:43:49 - core.driver - INFO - 正在访问URL: https://www.baidu.com
+2025-03-02 19:43:56 - core.driver - INFO - 成功访问URL: https://www.baidu.com
+2025-03-02 19:44:01 - core.driver - INFO - Chrome浏览器已关闭
+2025-03-02 19:44:06 - core.profile_manager - INFO - Chrome用户数据目录: C:\Users\ly frienk\AppData\Local\Google\Chrome\User Data
+2025-03-02 19:44:06 - core.profile_manager - INFO - 找到 3 个Chrome用户配置文件
+2025-03-02 19:44:09 - __main__ - INFO - 使用配置文件 'Profile 2' 打开网站: https://www.baidu.com
+2025-03-02 19:44:09 - core.driver - INFO - 使用Chrome用户配置文件: Profile 2
+2025-03-02 19:44:11 - core.driver - INFO - Chrome浏览器启动成功
+2025-03-02 19:44:11 - core.driver - INFO - 正在访问URL: https://www.baidu.com
+2025-03-02 19:44:17 - core.driver - INFO - 成功访问URL: https://www.baidu.com
+2025-03-02 22:59:43 - core.driver - INFO - Chrome浏览器已关闭
+2025-03-02 23:00:54 - core.profile_manager - INFO - Chrome用户数据目录: C:\Users\ly frienk\AppData\Local\Google\Chrome\User Data
+2025-03-02 23:00:54 - core.profile_manager - INFO - 找到 3 个Chrome用户配置文件
+2025-03-02 23:00:54 - __main__ - INFO - 使用配置文件 'Profile 2' 打开网站: https://www.baidu.com
+2025-03-02 23:00:54 - core.driver - INFO - 使用Chrome用户配置文件: Profile 2
+2025-03-02 23:00:57 - core.driver - INFO - Chrome浏览器启动成功
+2025-03-02 23:00:57 - core.driver - INFO - 正在访问URL: https://www.baidu.com
+2025-03-02 23:01:03 - core.driver - INFO - 成功访问URL: https://www.baidu.com
+2025-03-02 23:03:45 - core.driver - INFO - Chrome浏览器已关闭
+2025-03-02 23:03:57 - core.profile_manager - INFO - Chrome用户数据目录: C:\Users\ly frienk\AppData\Local\Google\Chrome\User Data
+2025-03-02 23:03:57 - core.profile_manager - INFO - 找到 3 个Chrome用户配置文件
+2025-03-02 23:03:57 - __main__ - INFO - 使用配置文件 'Profile 2' 打开网站: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-02 23:03:57 - core.driver - INFO - 使用Chrome用户配置文件: Profile 2
+2025-03-02 23:03:59 - core.driver - INFO - Chrome浏览器启动成功
+2025-03-02 23:03:59 - core.driver - INFO - 正在访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-02 23:04:08 - core.driver - INFO - 成功访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 21:57:20 - core.profile_manager - INFO - Chrome用户数据目录: C:\Users\ly frienk\AppData\Local\Google\Chrome\User Data
+2025-03-03 21:57:20 - core.profile_manager - INFO - 找到 3 个Chrome用户配置文件
+2025-03-03 21:57:20 - __main__ - INFO - 使用配置文件 'Profile 2' 打开网站: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 21:57:20 - core.driver - INFO - 使用Chrome用户配置文件: Profile 2
+2025-03-03 21:57:24 - core.driver - INFO - Chrome浏览器启动成功
+2025-03-03 21:57:24 - core.driver - INFO - 正在访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 21:57:38 - core.driver - INFO - 成功访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 21:59:17 - core.driver - INFO - Chrome浏览器已关闭
+2025-03-03 21:59:23 - core.profile_manager - INFO - Chrome用户数据目录: C:\Users\ly frienk\AppData\Local\Google\Chrome\User Data
+2025-03-03 21:59:23 - core.profile_manager - INFO - 找到 3 个Chrome用户配置文件
+2025-03-03 21:59:23 - __main__ - INFO - 使用配置文件 'Profile 2' 打开网站: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 21:59:23 - core.driver - INFO - 使用Chrome用户配置文件: Profile 2
+2025-03-03 21:59:24 - core.driver - INFO - Chrome浏览器启动成功
+2025-03-03 21:59:24 - core.driver - INFO - 正在访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 21:59:35 - core.driver - INFO - 成功访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 22:03:54 - core.driver - INFO - Chrome浏览器已关闭
+2025-03-03 22:06:28 - core.profile_manager - INFO - Chrome用户数据目录: C:\Users\ly frienk\AppData\Local\Google\Chrome\User Data
+2025-03-03 22:06:28 - core.profile_manager - INFO - 找到 3 个Chrome用户配置文件
+2025-03-03 22:06:28 - __main__ - INFO - 使用配置文件 'Profile 2' 打开网站: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 22:06:28 - core.driver - INFO - 使用Chrome用户配置文件: Profile 2
+2025-03-03 22:06:30 - core.driver - INFO - Chrome浏览器启动成功
+2025-03-03 22:06:30 - core.driver - INFO - 正在访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 22:07:30 - core.driver - INFO - 成功访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 22:07:30 - __main__ - INFO - 点击设置按钮
+2025-03-03 22:07:34 - __main__ - INFO - 点击复选框
+2025-03-03 22:07:41 - __main__ - INFO - 点击确认按钮
+2025-03-03 22:07:52 - __main__ - ERROR - 配置试卷设置时出错: Message: 
+
+2025-03-03 22:07:52 - __main__ - ERROR - 配置试卷设置失败
+2025-03-03 22:07:56 - core.driver - INFO - Chrome浏览器已关闭
