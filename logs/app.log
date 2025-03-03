@@ -173,3 +173,53 @@ Stacktrace:
 
 2025-03-03 22:07:52 - __main__ - ERROR - 配置试卷设置失败
 2025-03-03 22:07:56 - core.driver - INFO - Chrome浏览器已关闭
+2025-03-03 22:10:00 - core.profile_manager - INFO - Chrome用户数据目录: C:\Users\ly frienk\AppData\Local\Google\Chrome\User Data
+2025-03-03 22:10:00 - core.profile_manager - INFO - 找到 3 个Chrome用户配置文件
+2025-03-03 22:10:00 - __main__ - INFO - 使用配置文件 'Profile 2' 打开网站: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 22:10:00 - core.driver - INFO - 使用Chrome用户配置文件: Profile 2
+2025-03-03 22:10:02 - core.driver - INFO - Chrome浏览器启动成功
+2025-03-03 22:10:02 - core.driver - INFO - 正在访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 22:10:13 - core.driver - INFO - 成功访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 22:11:44 - core.driver - INFO - Chrome浏览器已关闭
+2025-03-03 22:12:43 - core.profile_manager - INFO - Chrome用户数据目录: C:\Users\ly frienk\AppData\Local\Google\Chrome\User Data
+2025-03-03 22:12:43 - core.profile_manager - INFO - 找到 3 个Chrome用户配置文件
+2025-03-03 22:12:43 - __main__ - INFO - 使用配置文件 'Profile 2' 打开网站: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 22:12:43 - core.driver - INFO - 使用Chrome用户配置文件: Profile 2
+2025-03-03 22:12:45 - core.driver - INFO - Chrome浏览器启动成功
+2025-03-03 22:12:45 - core.driver - INFO - 正在访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 22:12:53 - core.driver - INFO - 成功访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 22:12:53 - __main__ - INFO - 等待页面加载...
+2025-03-03 22:12:55 - __main__ - INFO - 点击设置按钮...
+2025-03-03 22:12:57 - __main__ - INFO - 点击复选框...
+2025-03-03 22:12:59 - __main__ - INFO - 点击确认按钮...
+2025-03-03 22:13:09 - __main__ - ERROR - 执行自动化步骤时发生错误: Message: 
+
+2025-03-03 22:13:09 - __main__ - ERROR - 自动化任务执行失败
+2025-03-03 22:14:56 - core.driver - INFO - Chrome浏览器已关闭
+2025-03-03 22:15:00 - core.profile_manager - INFO - Chrome用户数据目录: C:\Users\ly frienk\AppData\Local\Google\Chrome\User Data
+2025-03-03 22:15:00 - core.profile_manager - INFO - 找到 3 个Chrome用户配置文件
+2025-03-03 22:15:00 - __main__ - INFO - 使用配置文件 'Profile 2' 打开网站: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 22:15:00 - core.driver - INFO - 使用Chrome用户配置文件: Profile 2
+2025-03-03 22:15:02 - core.driver - INFO - Chrome浏览器启动成功
+2025-03-03 22:15:02 - core.driver - INFO - 正在访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 22:15:11 - core.driver - INFO - 成功访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 22:15:11 - __main__ - INFO - 等待页面加载...
+2025-03-03 22:15:14 - __main__ - INFO - 点击设置按钮...
+2025-03-03 22:15:16 - __main__ - INFO - 点击复选框...
+2025-03-03 22:15:19 - __main__ - INFO - 点击确认按钮...
+2025-03-03 22:15:22 - __main__ - INFO - 自动化步骤执行完成
+2025-03-03 22:15:22 - __main__ - INFO - 自动化任务执行成功
+2025-03-03 22:17:49 - core.driver - INFO - Chrome浏览器已关闭
+2025-03-03 22:17:55 - core.profile_manager - INFO - Chrome用户数据目录: C:\Users\ly frienk\AppData\Local\Google\Chrome\User Data
+2025-03-03 22:17:55 - core.profile_manager - INFO - 找到 3 个Chrome用户配置文件
+2025-03-03 22:17:55 - __main__ - INFO - 使用配置文件 'Profile 2' 打开网站: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 22:17:55 - core.driver - INFO - 使用Chrome用户配置文件: Profile 2
+2025-03-03 22:17:56 - core.driver - INFO - Chrome浏览器启动成功
+2025-03-03 22:17:56 - core.driver - INFO - 正在访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 22:18:06 - core.driver - INFO - 成功访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 22:18:06 - automation.paper_settings - INFO - 等待页面加载...
+2025-03-03 22:18:08 - automation.paper_settings - INFO - 点击设置按钮...
+2025-03-03 22:18:11 - automation.paper_settings - INFO - 点击复选框...
+2025-03-03 22:18:14 - automation.paper_settings - INFO - 点击确认按钮...
+2025-03-03 22:18:17 - automation.paper_settings - INFO - 试卷设置配置完成
+2025-03-03 22:18:17 - __main__ - INFO - 自动化任务执行成功
