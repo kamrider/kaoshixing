@@ -223,3 +223,796 @@ Stacktrace:
 2025-03-03 22:18:14 - automation.paper_settings - INFO - 点击确认按钮...
 2025-03-03 22:18:17 - automation.paper_settings - INFO - 试卷设置配置完成
 2025-03-03 22:18:17 - __main__ - INFO - 自动化任务执行成功
+2025-03-03 22:28:53 - core.driver - INFO - Chrome浏览器已关闭
+2025-03-03 22:29:00 - core.profile_manager - INFO - Chrome用户数据目录: C:\Users\ly frienk\AppData\Local\Google\Chrome\User Data
+2025-03-03 22:29:00 - core.profile_manager - INFO - 找到 3 个Chrome用户配置文件
+2025-03-03 22:29:00 - __main__ - INFO - 使用配置文件 'Profile 2' 打开网站: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 22:29:00 - core.driver - INFO - 使用Chrome用户配置文件: Profile 2
+2025-03-03 22:29:02 - core.driver - INFO - Chrome浏览器启动成功
+2025-03-03 22:29:02 - core.driver - INFO - 正在访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 22:29:09 - core.driver - INFO - 成功访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 22:29:09 - automation.paper_settings - INFO - 等待页面加载...
+2025-03-03 22:29:12 - automation.paper_settings - INFO - 点击设置按钮...
+2025-03-03 22:29:14 - automation.paper_settings - INFO - 点击复选框...
+2025-03-03 22:29:17 - automation.paper_settings - INFO - 点击确认按钮...
+2025-03-03 22:29:19 - automation.paper_settings - INFO - 试卷设置配置完成
+2025-03-03 22:29:19 - __main__ - INFO - 开始添加大题...
+2025-03-03 22:29:19 - automation.question_management - INFO - 准备添加大题...
+2025-03-03 22:29:33 - automation.question_management - ERROR - 添加大题时发生错误: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF632ABC6A5+28789]
+	(No symbol) [0x00007FF632A25B20]
+	(No symbol) [0x00007FF6328B8F9A]
+	(No symbol) [0x00007FF63290F346]
+	(No symbol) [0x00007FF63290F57C]
+	(No symbol) [0x00007FF632962B17]
+	(No symbol) [0x00007FF63293736F]
+	(No symbol) [0x00007FF63295F7E3]
+	(No symbol) [0x00007FF632937103]
+	(No symbol) [0x00007FF6328FFFC0]
+	(No symbol) [0x00007FF632901273]
+	GetHandleVerifier [0x00007FF632E01AED+3458237]
+	GetHandleVerifier [0x00007FF632E1829C+3550316]
+	GetHandleVerifier [0x00007FF632E0DB9D+3507565]
+	GetHandleVerifier [0x00007FF632B82C6A+841274]
+	(No symbol) [0x00007FF632A309EF]
+	(No symbol) [0x00007FF632A2CB34]
+	(No symbol) [0x00007FF632A2CCD6]
+	(No symbol) [0x00007FF632A1C119]
+	BaseThreadInitThunk [0x00007FF91371259D+29]
+	RtlUserThreadStart [0x00007FF91548AF38+40]
+
+2025-03-03 22:29:33 - __main__ - ERROR - 自动化任务执行失败
+2025-03-03 22:33:01 - core.driver - INFO - Chrome浏览器已关闭
+2025-03-03 22:33:06 - core.profile_manager - INFO - Chrome用户数据目录: C:\Users\ly frienk\AppData\Local\Google\Chrome\User Data
+2025-03-03 22:33:06 - core.profile_manager - INFO - 找到 3 个Chrome用户配置文件
+2025-03-03 22:33:06 - __main__ - INFO - 使用配置文件 'Profile 2' 打开网站: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 22:33:06 - core.driver - INFO - 使用Chrome用户配置文件: Profile 2
+2025-03-03 22:33:08 - core.driver - INFO - Chrome浏览器启动成功
+2025-03-03 22:33:08 - core.driver - INFO - 正在访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 22:33:16 - core.driver - INFO - 成功访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 22:33:16 - automation.paper_settings - INFO - 等待页面加载...
+2025-03-03 22:33:19 - automation.paper_settings - INFO - 点击设置按钮...
+2025-03-03 22:33:21 - automation.paper_settings - INFO - 点击复选框...
+2025-03-03 22:33:24 - automation.paper_settings - INFO - 点击确认按钮...
+2025-03-03 22:33:25 - automation.paper_settings - INFO - 试卷设置配置完成
+2025-03-03 22:33:25 - __main__ - INFO - 开始添加问答题...
+2025-03-03 22:33:25 - automation.question_management - INFO - 准备添加问答题...
+2025-03-03 22:33:27 - automation.question_management - INFO - 点击添加题目按钮...
+2025-03-03 22:33:39 - automation.question_management - ERROR - 添加问答题时发生错误: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF632ABC6A5+28789]
+	(No symbol) [0x00007FF632A25B20]
+	(No symbol) [0x00007FF6328B8F9A]
+	(No symbol) [0x00007FF63290F346]
+	(No symbol) [0x00007FF63290F57C]
+	(No symbol) [0x00007FF632962B17]
+	(No symbol) [0x00007FF63293736F]
+	(No symbol) [0x00007FF63295F7E3]
+	(No symbol) [0x00007FF632937103]
+	(No symbol) [0x00007FF6328FFFC0]
+	(No symbol) [0x00007FF632901273]
+	GetHandleVerifier [0x00007FF632E01AED+3458237]
+	GetHandleVerifier [0x00007FF632E1829C+3550316]
+	GetHandleVerifier [0x00007FF632E0DB9D+3507565]
+	GetHandleVerifier [0x00007FF632B82C6A+841274]
+	(No symbol) [0x00007FF632A309EF]
+	(No symbol) [0x00007FF632A2CB34]
+	(No symbol) [0x00007FF632A2CCD6]
+	(No symbol) [0x00007FF632A1C119]
+	BaseThreadInitThunk [0x00007FF91371259D+29]
+	RtlUserThreadStart [0x00007FF91548AF38+40]
+
+2025-03-03 22:33:39 - __main__ - ERROR - 自动化任务执行失败
+2025-03-03 22:34:32 - core.driver - INFO - Chrome浏览器已关闭
+2025-03-03 22:34:37 - core.profile_manager - INFO - Chrome用户数据目录: C:\Users\ly frienk\AppData\Local\Google\Chrome\User Data
+2025-03-03 22:34:37 - core.profile_manager - INFO - 找到 3 个Chrome用户配置文件
+2025-03-03 22:34:37 - __main__ - INFO - 使用配置文件 'Profile 2' 打开网站: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 22:34:37 - core.driver - INFO - 使用Chrome用户配置文件: Profile 2
+2025-03-03 22:34:38 - core.driver - INFO - Chrome浏览器启动成功
+2025-03-03 22:34:38 - core.driver - INFO - 正在访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 22:34:46 - core.driver - INFO - 成功访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 22:34:46 - automation.paper_settings - INFO - 等待页面加载...
+2025-03-03 22:34:49 - automation.paper_settings - INFO - 点击设置按钮...
+2025-03-03 22:34:51 - automation.paper_settings - INFO - 点击复选框...
+2025-03-03 22:34:53 - automation.paper_settings - INFO - 点击确认按钮...
+2025-03-03 22:34:55 - automation.paper_settings - INFO - 试卷设置配置完成
+2025-03-03 22:34:55 - __main__ - INFO - 开始添加问答题...
+2025-03-03 22:34:55 - automation.question_management - INFO - 准备添加问答题...
+2025-03-03 22:34:57 - automation.question_management - INFO - 点击添加题目按钮...
+2025-03-03 22:35:09 - automation.question_management - ERROR - 添加问答题时发生错误: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF632ABC6A5+28789]
+	(No symbol) [0x00007FF632A25B20]
+	(No symbol) [0x00007FF6328B8F9A]
+	(No symbol) [0x00007FF63290F346]
+	(No symbol) [0x00007FF63290F57C]
+	(No symbol) [0x00007FF632962B17]
+	(No symbol) [0x00007FF63293736F]
+	(No symbol) [0x00007FF63295F7E3]
+	(No symbol) [0x00007FF632937103]
+	(No symbol) [0x00007FF6328FFFC0]
+	(No symbol) [0x00007FF632901273]
+	GetHandleVerifier [0x00007FF632E01AED+3458237]
+	GetHandleVerifier [0x00007FF632E1829C+3550316]
+	GetHandleVerifier [0x00007FF632E0DB9D+3507565]
+	GetHandleVerifier [0x00007FF632B82C6A+841274]
+	(No symbol) [0x00007FF632A309EF]
+	(No symbol) [0x00007FF632A2CB34]
+	(No symbol) [0x00007FF632A2CCD6]
+	(No symbol) [0x00007FF632A1C119]
+	BaseThreadInitThunk [0x00007FF91371259D+29]
+	RtlUserThreadStart [0x00007FF91548AF38+40]
+
+2025-03-03 22:35:09 - __main__ - ERROR - 自动化任务执行失败
+2025-03-03 22:37:16 - core.driver - INFO - Chrome浏览器已关闭
+2025-03-03 22:37:38 - core.profile_manager - INFO - Chrome用户数据目录: C:\Users\ly frienk\AppData\Local\Google\Chrome\User Data
+2025-03-03 22:37:38 - core.profile_manager - INFO - 找到 3 个Chrome用户配置文件
+2025-03-03 22:37:38 - __main__ - INFO - 使用配置文件 'Profile 2' 打开网站: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 22:37:38 - core.driver - INFO - 使用Chrome用户配置文件: Profile 2
+2025-03-03 22:37:40 - core.driver - INFO - Chrome浏览器启动成功
+2025-03-03 22:37:40 - core.driver - INFO - 正在访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 22:37:50 - core.driver - INFO - 成功访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 22:37:50 - automation.paper_settings - INFO - 等待页面加载...
+2025-03-03 22:37:52 - automation.paper_settings - INFO - 点击设置按钮...
+2025-03-03 22:37:54 - automation.paper_settings - INFO - 点击复选框...
+2025-03-03 22:37:58 - automation.paper_settings - INFO - 点击确认按钮...
+2025-03-03 22:38:00 - automation.paper_settings - INFO - 试卷设置配置完成
+2025-03-03 22:38:00 - __main__ - INFO - 开始添加问答题...
+2025-03-03 22:38:00 - automation.question_management - INFO - 准备添加问答题...
+2025-03-03 22:38:01 - automation.question_management - INFO - 点击添加题目按钮...
+2025-03-03 22:38:03 - automation.question_management - INFO - 尝试选择问答题...
+2025-03-03 22:38:14 - automation.question_management - ERROR - 选择问答题失败，尝试备用方案...
+2025-03-03 22:38:15 - automation.question_management - INFO - 问答题添加成功
+2025-03-03 22:38:15 - __main__ - INFO - 自动化任务执行成功
+2025-03-03 22:40:28 - core.driver - INFO - Chrome浏览器已关闭
+2025-03-03 22:40:44 - core.profile_manager - INFO - Chrome用户数据目录: C:\Users\ly frienk\AppData\Local\Google\Chrome\User Data
+2025-03-03 22:40:44 - core.profile_manager - INFO - 找到 3 个Chrome用户配置文件
+2025-03-03 22:40:44 - __main__ - INFO - 使用配置文件 'Profile 2' 打开网站: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 22:40:44 - core.driver - INFO - 使用Chrome用户配置文件: Profile 2
+2025-03-03 22:40:46 - core.driver - INFO - Chrome浏览器启动成功
+2025-03-03 22:40:46 - core.driver - INFO - 正在访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 22:40:53 - core.driver - INFO - 成功访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 22:40:53 - automation.paper_settings - INFO - 等待页面加载...
+2025-03-03 22:40:55 - automation.paper_settings - INFO - 点击设置按钮...
+2025-03-03 22:40:57 - automation.paper_settings - INFO - 点击复选框...
+2025-03-03 22:40:59 - automation.paper_settings - INFO - 点击确认按钮...
+2025-03-03 22:41:01 - automation.paper_settings - INFO - 试卷设置配置完成
+2025-03-03 22:41:01 - __main__ - INFO - 开始添加问答题...
+2025-03-03 22:41:01 - automation.question_management - INFO - 准备添加问答题...
+2025-03-03 22:41:03 - automation.question_management - INFO - 点击添加题目按钮...
+2025-03-03 22:41:05 - automation.question_management - INFO - 尝试选择问答题...
+2025-03-03 22:41:16 - automation.question_management - ERROR - 选择问答题失败，尝试备用方案...
+2025-03-03 22:41:17 - automation.question_management - INFO - 问答题添加成功
+2025-03-03 22:41:17 - __main__ - INFO - 自动化任务执行成功
+2025-03-03 22:47:49 - core.driver - INFO - Chrome浏览器已关闭
+2025-03-03 22:47:54 - core.profile_manager - INFO - Chrome用户数据目录: C:\Users\ly frienk\AppData\Local\Google\Chrome\User Data
+2025-03-03 22:47:54 - core.profile_manager - INFO - 找到 3 个Chrome用户配置文件
+2025-03-03 22:47:54 - __main__ - INFO - 使用配置文件 'Profile 2' 打开网站: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 22:47:54 - core.driver - INFO - 使用Chrome用户配置文件: Profile 2
+2025-03-03 22:47:56 - core.driver - INFO - Chrome浏览器启动成功
+2025-03-03 22:47:56 - core.driver - INFO - 正在访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 22:48:05 - core.driver - INFO - 成功访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 22:48:05 - automation.paper_settings - INFO - 等待页面加载...
+2025-03-03 22:48:07 - automation.paper_settings - INFO - 点击设置按钮...
+2025-03-03 22:48:09 - automation.paper_settings - INFO - 点击复选框...
+2025-03-03 22:48:12 - automation.paper_settings - INFO - 点击确认按钮...
+2025-03-03 22:48:15 - automation.paper_settings - INFO - 试卷设置配置完成
+2025-03-03 22:48:15 - __main__ - INFO - 开始添加问答题...
+2025-03-03 22:48:15 - automation.question_management - INFO - 准备添加问答题...
+2025-03-03 22:48:16 - automation.question_management - INFO - 定位下拉菜单按钮...
+2025-03-03 22:48:16 - automation.question_management - INFO - 等待按钮可交互...
+2025-03-03 22:48:16 - automation.question_management - INFO - 点击添加题目按钮...
+2025-03-03 22:48:18 - automation.question_management - INFO - 等待下拉菜单出现...
+2025-03-03 22:48:18 - automation.question_management - INFO - 尝试选择问答题...
+2025-03-03 22:48:29 - automation.question_management - ERROR - 直接点击失败，尝试备用方案: Message: 
+
+2025-03-03 22:48:29 - automation.question_management - ERROR - 备用方案1失败，尝试备用方案2...
+2025-03-03 22:48:33 - automation.question_management - INFO - 问答题添加成功
+2025-03-03 22:48:33 - __main__ - INFO - 自动化任务执行成功
+2025-03-03 22:48:45 - core.driver - INFO - Chrome浏览器已关闭
+2025-03-03 22:48:49 - core.profile_manager - INFO - Chrome用户数据目录: C:\Users\ly frienk\AppData\Local\Google\Chrome\User Data
+2025-03-03 22:48:49 - core.profile_manager - INFO - 找到 3 个Chrome用户配置文件
+2025-03-03 22:48:49 - __main__ - INFO - 使用配置文件 'Profile 2' 打开网站: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 22:48:49 - core.driver - INFO - 使用Chrome用户配置文件: Profile 2
+2025-03-03 22:48:51 - core.driver - INFO - Chrome浏览器启动成功
+2025-03-03 22:48:51 - core.driver - INFO - 正在访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 22:49:01 - core.driver - INFO - 成功访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 22:49:01 - automation.paper_settings - INFO - 等待页面加载...
+2025-03-03 22:49:03 - automation.paper_settings - INFO - 点击设置按钮...
+2025-03-03 22:49:05 - automation.paper_settings - INFO - 点击复选框...
+2025-03-03 22:49:08 - automation.paper_settings - INFO - 点击确认按钮...
+2025-03-03 22:49:11 - automation.paper_settings - INFO - 试卷设置配置完成
+2025-03-03 22:49:11 - __main__ - INFO - 开始添加问答题...
+2025-03-03 22:49:11 - automation.question_management - INFO - 准备添加问答题...
+2025-03-03 22:49:12 - automation.question_management - INFO - 定位下拉菜单按钮...
+2025-03-03 22:49:12 - automation.question_management - INFO - 等待按钮可交互...
+2025-03-03 22:49:12 - automation.question_management - INFO - 点击添加题目按钮...
+2025-03-03 22:49:15 - automation.question_management - INFO - 等待下拉菜单出现...
+2025-03-03 22:49:15 - automation.question_management - INFO - 尝试选择问答题...
+2025-03-03 22:49:25 - automation.question_management - ERROR - 直接点击失败，尝试备用方案: Message: 
+
+2025-03-03 22:49:26 - automation.question_management - ERROR - 备用方案1失败，尝试备用方案2...
+2025-03-03 22:49:29 - automation.question_management - INFO - 问答题添加成功
+2025-03-03 22:49:29 - __main__ - INFO - 自动化任务执行成功
+2025-03-03 22:54:41 - core.driver - INFO - Chrome浏览器已关闭
+2025-03-03 22:54:46 - core.profile_manager - INFO - Chrome用户数据目录: C:\Users\ly frienk\AppData\Local\Google\Chrome\User Data
+2025-03-03 22:54:46 - core.profile_manager - INFO - 找到 3 个Chrome用户配置文件
+2025-03-03 22:54:46 - __main__ - INFO - 使用配置文件 'Profile 2' 打开网站: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 22:54:46 - core.driver - INFO - 使用Chrome用户配置文件: Profile 2
+2025-03-03 22:54:48 - core.driver - INFO - Chrome浏览器启动成功
+2025-03-03 22:54:48 - core.driver - INFO - 正在访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 22:54:57 - core.driver - INFO - 成功访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 22:54:57 - __main__ - INFO - 开始添加问答题...
+2025-03-03 22:54:57 - automation.question_management - INFO - 准备添加问答题...
+2025-03-03 22:54:58 - automation.question_management - INFO - 定位下拉菜单按钮...
+2025-03-03 22:54:58 - automation.question_management - INFO - 等待按钮可交互...
+2025-03-03 22:54:59 - automation.question_management - INFO - 点击添加题目按钮...
+2025-03-03 22:55:02 - automation.question_management - INFO - 等待下拉菜单出现...
+2025-03-03 22:55:02 - automation.question_management - INFO - 尝试选择问答题...
+2025-03-03 22:55:12 - automation.question_management - ERROR - 直接点击失败，尝试备用方案: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF632ABC6A5+28789]
+	(No symbol) [0x00007FF632A25B20]
+	(No symbol) [0x00007FF6328B8F9A]
+	(No symbol) [0x00007FF63290F346]
+	(No symbol) [0x00007FF63290F57C]
+	(No symbol) [0x00007FF632962B17]
+	(No symbol) [0x00007FF63293736F]
+	(No symbol) [0x00007FF63295F7E3]
+	(No symbol) [0x00007FF632937103]
+	(No symbol) [0x00007FF6328FFFC0]
+	(No symbol) [0x00007FF632901273]
+	GetHandleVerifier [0x00007FF632E01AED+3458237]
+	GetHandleVerifier [0x00007FF632E1829C+3550316]
+	GetHandleVerifier [0x00007FF632E0DB9D+3507565]
+	GetHandleVerifier [0x00007FF632B82C6A+841274]
+	(No symbol) [0x00007FF632A309EF]
+	(No symbol) [0x00007FF632A2CB34]
+	(No symbol) [0x00007FF632A2CCD6]
+	(No symbol) [0x00007FF632A1C119]
+	BaseThreadInitThunk [0x00007FF91371259D+29]
+	RtlUserThreadStart [0x00007FF91548AF38+40]
+
+2025-03-03 22:55:24 - automation.question_management - INFO - 问答题添加成功
+2025-03-03 22:55:24 - __main__ - INFO - 自动化任务执行成功
+2025-03-03 22:55:26 - core.driver - INFO - Chrome浏览器已关闭
+2025-03-03 22:58:09 - core.profile_manager - INFO - Chrome用户数据目录: C:\Users\ly frienk\AppData\Local\Google\Chrome\User Data
+2025-03-03 22:58:09 - core.profile_manager - INFO - 找到 3 个Chrome用户配置文件
+2025-03-03 22:58:09 - __main__ - INFO - 使用配置文件 'Profile 2' 打开网站: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 22:58:09 - core.driver - INFO - 使用Chrome用户配置文件: Profile 2
+2025-03-03 22:58:12 - core.driver - INFO - Chrome浏览器启动成功
+2025-03-03 22:58:12 - core.driver - INFO - 正在访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 22:58:21 - core.driver - INFO - 成功访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-03 22:58:21 - __main__ - INFO - 开始添加问答题...
+2025-03-03 22:58:21 - automation.question_management - INFO - 准备添加问答题...
+2025-03-03 22:58:22 - automation.question_management - INFO - 定位下拉菜单按钮...
+2025-03-03 22:58:22 - automation.question_management - INFO - 等待按钮可交互...
+2025-03-03 22:58:24 - automation.question_management - INFO - 触发下拉菜单...
+2025-03-03 22:58:26 - automation.question_management - INFO - 等待下拉菜单出现...
+2025-03-03 22:58:36 - automation.question_management - ERROR - 添加题目时发生错误: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF632ABC6A5+28789]
+	(No symbol) [0x00007FF632A25B20]
+	(No symbol) [0x00007FF6328B8F9A]
+	(No symbol) [0x00007FF63290F346]
+	(No symbol) [0x00007FF63290F57C]
+	(No symbol) [0x00007FF632962B17]
+	(No symbol) [0x00007FF63293736F]
+	(No symbol) [0x00007FF63295F7E3]
+	(No symbol) [0x00007FF632937103]
+	(No symbol) [0x00007FF6328FFFC0]
+	(No symbol) [0x00007FF632901273]
+	GetHandleVerifier [0x00007FF632E01AED+3458237]
+	GetHandleVerifier [0x00007FF632E1829C+3550316]
+	GetHandleVerifier [0x00007FF632E0DB9D+3507565]
+	GetHandleVerifier [0x00007FF632B82C6A+841274]
+	(No symbol) [0x00007FF632A309EF]
+	(No symbol) [0x00007FF632A2CB34]
+	(No symbol) [0x00007FF632A2CCD6]
+	(No symbol) [0x00007FF632A1C119]
+	BaseThreadInitThunk [0x00007FF91371259D+29]
+	RtlUserThreadStart [0x00007FF91548AF38+40]
+
+2025-03-03 22:58:36 - automation.question_management - ERROR - 详细错误信息: Traceback (most recent call last):
+  File "e:\Github\kaoshixing\automation\question_management.py", line 70, in add_question
+    dropdown_menu = WebDriverWait(driver.driver, 10).until(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ly frienk\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 101, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF632ABC6A5+28789]
+	(No symbol) [0x00007FF632A25B20]
+	(No symbol) [0x00007FF6328B8F9A]
+	(No symbol) [0x00007FF63290F346]
+	(No symbol) [0x00007FF63290F57C]
+	(No symbol) [0x00007FF632962B17]
+	(No symbol) [0x00007FF63293736F]
+	(No symbol) [0x00007FF63295F7E3]
+	(No symbol) [0x00007FF632937103]
+	(No symbol) [0x00007FF6328FFFC0]
+	(No symbol) [0x00007FF632901273]
+	GetHandleVerifier [0x00007FF632E01AED+3458237]
+	GetHandleVerifier [0x00007FF632E1829C+3550316]
+	GetHandleVerifier [0x00007FF632E0DB9D+3507565]
+	GetHandleVerifier [0x00007FF632B82C6A+841274]
+	(No symbol) [0x00007FF632A309EF]
+	(No symbol) [0x00007FF632A2CB34]
+	(No symbol) [0x00007FF632A2CCD6]
+	(No symbol) [0x00007FF632A1C119]
+	BaseThreadInitThunk [0x00007FF91371259D+29]
+	RtlUserThreadStart [0x00007FF91548AF38+40]
+
+
+2025-03-03 22:58:36 - __main__ - ERROR - 自动化任务执行失败
+2025-03-04 16:59:20 - core.profile_manager - INFO - Chrome用户数据目录: C:\Users\ly frienk\AppData\Local\Google\Chrome\User Data
+2025-03-04 16:59:20 - core.profile_manager - INFO - 找到 3 个Chrome用户配置文件
+2025-03-04 16:59:20 - __main__ - INFO - 使用配置文件 'Profile 2' 打开网站: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-04 16:59:20 - core.driver - INFO - 使用Chrome用户配置文件: Profile 2
+2025-03-04 16:59:23 - core.driver - INFO - Chrome浏览器启动成功
+2025-03-04 16:59:23 - core.driver - INFO - 正在访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-04 16:59:32 - core.driver - INFO - 成功访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-04 16:59:32 - __main__ - INFO - 开始添加问答题...
+2025-03-04 16:59:32 - automation.question_management - INFO - 准备添加问答题...
+2025-03-04 16:59:34 - automation.question_management - INFO - 定位下拉菜单按钮...
+2025-03-04 16:59:34 - automation.question_management - INFO - 等待按钮可交互...
+2025-03-04 16:59:36 - automation.question_management - INFO - 触发下拉菜单...
+2025-03-04 16:59:37 - automation.question_management - INFO - 等待下拉菜单出现...
+2025-03-04 16:59:48 - automation.question_management - ERROR - 添加题目时发生错误: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF7A83DC6A5+28789]
+	(No symbol) [0x00007FF7A8345B20]
+	(No symbol) [0x00007FF7A81D8F9A]
+	(No symbol) [0x00007FF7A822F346]
+	(No symbol) [0x00007FF7A822F57C]
+	(No symbol) [0x00007FF7A8282B17]
+	(No symbol) [0x00007FF7A825736F]
+	(No symbol) [0x00007FF7A827F7E3]
+	(No symbol) [0x00007FF7A8257103]
+	(No symbol) [0x00007FF7A821FFC0]
+	(No symbol) [0x00007FF7A8221273]
+	GetHandleVerifier [0x00007FF7A8721AED+3458237]
+	GetHandleVerifier [0x00007FF7A873829C+3550316]
+	GetHandleVerifier [0x00007FF7A872DB9D+3507565]
+	GetHandleVerifier [0x00007FF7A84A2C6A+841274]
+	(No symbol) [0x00007FF7A83509EF]
+	(No symbol) [0x00007FF7A834CB34]
+	(No symbol) [0x00007FF7A834CCD6]
+	(No symbol) [0x00007FF7A833C119]
+	BaseThreadInitThunk [0x00007FFBD827259D+29]
+	RtlUserThreadStart [0x00007FFBDA22AF38+40]
+
+2025-03-04 16:59:48 - automation.question_management - ERROR - 详细错误信息: Traceback (most recent call last):
+  File "e:\Github\kaoshixing\automation\question_management.py", line 70, in add_question
+    dropdown_menu = WebDriverWait(driver.driver, 10).until(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ly frienk\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 101, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF7A83DC6A5+28789]
+	(No symbol) [0x00007FF7A8345B20]
+	(No symbol) [0x00007FF7A81D8F9A]
+	(No symbol) [0x00007FF7A822F346]
+	(No symbol) [0x00007FF7A822F57C]
+	(No symbol) [0x00007FF7A8282B17]
+	(No symbol) [0x00007FF7A825736F]
+	(No symbol) [0x00007FF7A827F7E3]
+	(No symbol) [0x00007FF7A8257103]
+	(No symbol) [0x00007FF7A821FFC0]
+	(No symbol) [0x00007FF7A8221273]
+	GetHandleVerifier [0x00007FF7A8721AED+3458237]
+	GetHandleVerifier [0x00007FF7A873829C+3550316]
+	GetHandleVerifier [0x00007FF7A872DB9D+3507565]
+	GetHandleVerifier [0x00007FF7A84A2C6A+841274]
+	(No symbol) [0x00007FF7A83509EF]
+	(No symbol) [0x00007FF7A834CB34]
+	(No symbol) [0x00007FF7A834CCD6]
+	(No symbol) [0x00007FF7A833C119]
+	BaseThreadInitThunk [0x00007FFBD827259D+29]
+	RtlUserThreadStart [0x00007FFBDA22AF38+40]
+
+
+2025-03-04 16:59:48 - __main__ - ERROR - 自动化任务执行失败
+2025-03-04 17:01:00 - core.driver - INFO - Chrome浏览器已关闭
+2025-03-04 17:02:04 - core.profile_manager - INFO - Chrome用户数据目录: C:\Users\ly frienk\AppData\Local\Google\Chrome\User Data
+2025-03-04 17:02:04 - core.profile_manager - INFO - 找到 3 个Chrome用户配置文件
+2025-03-04 17:02:04 - __main__ - INFO - 使用配置文件 'Profile 2' 打开网站: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-04 17:02:04 - core.driver - INFO - 使用Chrome用户配置文件: Profile 2
+2025-03-04 17:02:06 - core.driver - INFO - Chrome浏览器启动成功
+2025-03-04 17:02:06 - core.driver - INFO - 正在访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-04 17:02:13 - core.driver - INFO - 成功访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-04 17:02:13 - __main__ - INFO - 开始添加问答题...
+2025-03-04 17:02:13 - automation.question_management - INFO - 准备添加问答题...
+2025-03-04 17:02:14 - automation.question_management - INFO - 定位下拉菜单按钮...
+2025-03-04 17:02:14 - automation.question_management - INFO - 等待按钮可交互...
+2025-03-04 17:02:16 - automation.question_management - INFO - 触发下拉菜单...
+2025-03-04 17:02:17 - automation.question_management - INFO - 等待下拉菜单出现...
+2025-03-04 17:02:28 - automation.question_management - ERROR - 添加题目时发生错误: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF7A83DC6A5+28789]
+	(No symbol) [0x00007FF7A8345B20]
+	(No symbol) [0x00007FF7A81D8F9A]
+	(No symbol) [0x00007FF7A822F346]
+	(No symbol) [0x00007FF7A822F57C]
+	(No symbol) [0x00007FF7A8282B17]
+	(No symbol) [0x00007FF7A825736F]
+	(No symbol) [0x00007FF7A827F7E3]
+	(No symbol) [0x00007FF7A8257103]
+	(No symbol) [0x00007FF7A821FFC0]
+	(No symbol) [0x00007FF7A8221273]
+	GetHandleVerifier [0x00007FF7A8721AED+3458237]
+	GetHandleVerifier [0x00007FF7A873829C+3550316]
+	GetHandleVerifier [0x00007FF7A872DB9D+3507565]
+	GetHandleVerifier [0x00007FF7A84A2C6A+841274]
+	(No symbol) [0x00007FF7A83509EF]
+	(No symbol) [0x00007FF7A834CB34]
+	(No symbol) [0x00007FF7A834CCD6]
+	(No symbol) [0x00007FF7A833C119]
+	BaseThreadInitThunk [0x00007FFBD827259D+29]
+	RtlUserThreadStart [0x00007FFBDA22AF38+40]
+
+2025-03-04 17:02:28 - automation.question_management - ERROR - 详细错误信息: Traceback (most recent call last):
+  File "e:\Github\kaoshixing\automation\question_management.py", line 70, in add_question
+    dropdown_menu = WebDriverWait(driver.driver, 10).until(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ly frienk\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 101, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF7A83DC6A5+28789]
+	(No symbol) [0x00007FF7A8345B20]
+	(No symbol) [0x00007FF7A81D8F9A]
+	(No symbol) [0x00007FF7A822F346]
+	(No symbol) [0x00007FF7A822F57C]
+	(No symbol) [0x00007FF7A8282B17]
+	(No symbol) [0x00007FF7A825736F]
+	(No symbol) [0x00007FF7A827F7E3]
+	(No symbol) [0x00007FF7A8257103]
+	(No symbol) [0x00007FF7A821FFC0]
+	(No symbol) [0x00007FF7A8221273]
+	GetHandleVerifier [0x00007FF7A8721AED+3458237]
+	GetHandleVerifier [0x00007FF7A873829C+3550316]
+	GetHandleVerifier [0x00007FF7A872DB9D+3507565]
+	GetHandleVerifier [0x00007FF7A84A2C6A+841274]
+	(No symbol) [0x00007FF7A83509EF]
+	(No symbol) [0x00007FF7A834CB34]
+	(No symbol) [0x00007FF7A834CCD6]
+	(No symbol) [0x00007FF7A833C119]
+	BaseThreadInitThunk [0x00007FFBD827259D+29]
+	RtlUserThreadStart [0x00007FFBDA22AF38+40]
+
+
+2025-03-04 17:02:28 - __main__ - ERROR - 自动化任务执行失败
+2025-03-04 17:04:45 - core.driver - INFO - Chrome浏览器已关闭
+2025-03-04 17:04:50 - core.profile_manager - INFO - Chrome用户数据目录: C:\Users\ly frienk\AppData\Local\Google\Chrome\User Data
+2025-03-04 17:04:50 - core.profile_manager - INFO - 找到 3 个Chrome用户配置文件
+2025-03-04 17:04:50 - __main__ - INFO - 使用配置文件 'Profile 2' 打开网站: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-04 17:04:50 - core.driver - INFO - 使用Chrome用户配置文件: Profile 2
+2025-03-04 17:04:52 - core.driver - INFO - Chrome浏览器启动成功
+2025-03-04 17:04:52 - core.driver - INFO - 正在访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-04 17:05:01 - core.driver - INFO - 成功访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-04 17:05:01 - __main__ - INFO - 开始添加问答题...
+2025-03-04 17:05:01 - automation.question_management - INFO - 准备添加问答题...
+2025-03-04 17:05:03 - automation.question_management - INFO - 定位下拉菜单按钮...
+2025-03-04 17:05:03 - automation.question_management - INFO - 等待按钮可交互...
+2025-03-04 17:05:04 - automation.question_management - INFO - 触发下拉菜单...
+2025-03-04 17:05:06 - automation.question_management - INFO - 等待下拉菜单出现...
+2025-03-04 17:05:17 - automation.question_management - ERROR - 添加题目时发生错误: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF7A83DC6A5+28789]
+	(No symbol) [0x00007FF7A8345B20]
+	(No symbol) [0x00007FF7A81D8F9A]
+	(No symbol) [0x00007FF7A822F346]
+	(No symbol) [0x00007FF7A822F57C]
+	(No symbol) [0x00007FF7A8282B17]
+	(No symbol) [0x00007FF7A825736F]
+	(No symbol) [0x00007FF7A827F7E3]
+	(No symbol) [0x00007FF7A8257103]
+	(No symbol) [0x00007FF7A821FFC0]
+	(No symbol) [0x00007FF7A8221273]
+	GetHandleVerifier [0x00007FF7A8721AED+3458237]
+	GetHandleVerifier [0x00007FF7A873829C+3550316]
+	GetHandleVerifier [0x00007FF7A872DB9D+3507565]
+	GetHandleVerifier [0x00007FF7A84A2C6A+841274]
+	(No symbol) [0x00007FF7A83509EF]
+	(No symbol) [0x00007FF7A834CB34]
+	(No symbol) [0x00007FF7A834CCD6]
+	(No symbol) [0x00007FF7A833C119]
+	BaseThreadInitThunk [0x00007FFBD827259D+29]
+	RtlUserThreadStart [0x00007FFBDA22AF38+40]
+
+2025-03-04 17:05:17 - automation.question_management - ERROR - 详细错误信息: Traceback (most recent call last):
+  File "e:\Github\kaoshixing\automation\question_management.py", line 70, in add_question
+    dropdown_menu = WebDriverWait(driver.driver, 10).until(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ly frienk\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 101, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF7A83DC6A5+28789]
+	(No symbol) [0x00007FF7A8345B20]
+	(No symbol) [0x00007FF7A81D8F9A]
+	(No symbol) [0x00007FF7A822F346]
+	(No symbol) [0x00007FF7A822F57C]
+	(No symbol) [0x00007FF7A8282B17]
+	(No symbol) [0x00007FF7A825736F]
+	(No symbol) [0x00007FF7A827F7E3]
+	(No symbol) [0x00007FF7A8257103]
+	(No symbol) [0x00007FF7A821FFC0]
+	(No symbol) [0x00007FF7A8221273]
+	GetHandleVerifier [0x00007FF7A8721AED+3458237]
+	GetHandleVerifier [0x00007FF7A873829C+3550316]
+	GetHandleVerifier [0x00007FF7A872DB9D+3507565]
+	GetHandleVerifier [0x00007FF7A84A2C6A+841274]
+	(No symbol) [0x00007FF7A83509EF]
+	(No symbol) [0x00007FF7A834CB34]
+	(No symbol) [0x00007FF7A834CCD6]
+	(No symbol) [0x00007FF7A833C119]
+	BaseThreadInitThunk [0x00007FFBD827259D+29]
+	RtlUserThreadStart [0x00007FFBDA22AF38+40]
+
+
+2025-03-04 17:05:17 - __main__ - ERROR - 自动化任务执行失败
+2025-03-04 17:07:33 - core.driver - INFO - Chrome浏览器已关闭
+2025-03-04 17:07:37 - core.profile_manager - INFO - Chrome用户数据目录: C:\Users\ly frienk\AppData\Local\Google\Chrome\User Data
+2025-03-04 17:07:37 - core.profile_manager - INFO - 找到 3 个Chrome用户配置文件
+2025-03-04 17:07:37 - __main__ - INFO - 使用配置文件 'Profile 2' 打开网站: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-04 17:07:37 - core.driver - INFO - 使用Chrome用户配置文件: Profile 2
+2025-03-04 17:07:39 - core.driver - INFO - Chrome浏览器启动成功
+2025-03-04 17:07:39 - core.driver - INFO - 正在访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-04 17:07:47 - core.driver - INFO - 成功访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-04 17:07:47 - __main__ - INFO - 开始添加问答题...
+2025-03-04 17:07:47 - automation.question_management - INFO - 准备添加问答题...
+2025-03-04 17:07:49 - automation.question_management - INFO - 定位下拉菜单按钮...
+2025-03-04 17:07:49 - automation.question_management - INFO - 等待按钮可交互...
+2025-03-04 17:07:50 - automation.question_management - INFO - 触发下拉菜单...
+2025-03-04 17:07:52 - automation.question_management - INFO - 等待下拉菜单出现...
+2025-03-04 17:08:02 - automation.question_management - ERROR - 添加题目时发生错误: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF7A83DC6A5+28789]
+	(No symbol) [0x00007FF7A8345B20]
+	(No symbol) [0x00007FF7A81D8F9A]
+	(No symbol) [0x00007FF7A822F346]
+	(No symbol) [0x00007FF7A822F57C]
+	(No symbol) [0x00007FF7A8282B17]
+	(No symbol) [0x00007FF7A825736F]
+	(No symbol) [0x00007FF7A827F7E3]
+	(No symbol) [0x00007FF7A8257103]
+	(No symbol) [0x00007FF7A821FFC0]
+	(No symbol) [0x00007FF7A8221273]
+	GetHandleVerifier [0x00007FF7A8721AED+3458237]
+	GetHandleVerifier [0x00007FF7A873829C+3550316]
+	GetHandleVerifier [0x00007FF7A872DB9D+3507565]
+	GetHandleVerifier [0x00007FF7A84A2C6A+841274]
+	(No symbol) [0x00007FF7A83509EF]
+	(No symbol) [0x00007FF7A834CB34]
+	(No symbol) [0x00007FF7A834CCD6]
+	(No symbol) [0x00007FF7A833C119]
+	BaseThreadInitThunk [0x00007FFBD827259D+29]
+	RtlUserThreadStart [0x00007FFBDA22AF38+40]
+
+2025-03-04 17:08:02 - automation.question_management - ERROR - 详细错误信息: Traceback (most recent call last):
+  File "e:\Github\kaoshixing\automation\question_management.py", line 70, in add_question
+    dropdown_menu = WebDriverWait(driver.driver, 10).until(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ly frienk\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 101, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF7A83DC6A5+28789]
+	(No symbol) [0x00007FF7A8345B20]
+	(No symbol) [0x00007FF7A81D8F9A]
+	(No symbol) [0x00007FF7A822F346]
+	(No symbol) [0x00007FF7A822F57C]
+	(No symbol) [0x00007FF7A8282B17]
+	(No symbol) [0x00007FF7A825736F]
+	(No symbol) [0x00007FF7A827F7E3]
+	(No symbol) [0x00007FF7A8257103]
+	(No symbol) [0x00007FF7A821FFC0]
+	(No symbol) [0x00007FF7A8221273]
+	GetHandleVerifier [0x00007FF7A8721AED+3458237]
+	GetHandleVerifier [0x00007FF7A873829C+3550316]
+	GetHandleVerifier [0x00007FF7A872DB9D+3507565]
+	GetHandleVerifier [0x00007FF7A84A2C6A+841274]
+	(No symbol) [0x00007FF7A83509EF]
+	(No symbol) [0x00007FF7A834CB34]
+	(No symbol) [0x00007FF7A834CCD6]
+	(No symbol) [0x00007FF7A833C119]
+	BaseThreadInitThunk [0x00007FFBD827259D+29]
+	RtlUserThreadStart [0x00007FFBDA22AF38+40]
+
+
+2025-03-04 17:08:02 - __main__ - ERROR - 自动化任务执行失败
+2025-03-04 17:14:15 - core.driver - INFO - Chrome浏览器已关闭
+2025-03-04 17:14:20 - core.profile_manager - INFO - Chrome用户数据目录: C:\Users\ly frienk\AppData\Local\Google\Chrome\User Data
+2025-03-04 17:14:20 - core.profile_manager - INFO - 找到 3 个Chrome用户配置文件
+2025-03-04 17:14:20 - __main__ - INFO - 使用配置文件 'Profile 2' 打开网站: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-04 17:14:20 - core.driver - INFO - 使用Chrome用户配置文件: Profile 2
+2025-03-04 17:14:22 - core.driver - INFO - Chrome浏览器启动成功
+2025-03-04 17:14:22 - core.driver - INFO - 正在访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-04 17:14:31 - core.driver - INFO - 成功访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-04 17:14:31 - __main__ - INFO - 开始添加问答题...
+2025-03-04 17:14:31 - automation.question_management - INFO - 准备添加问答题...
+2025-03-04 17:14:32 - automation.question_management - INFO - 定位下拉菜单按钮...
+2025-03-04 17:14:32 - automation.question_management - INFO - 等待按钮可交互...
+2025-03-04 17:14:34 - automation.question_management - INFO - 触发下拉菜单...
+2025-03-04 17:14:36 - automation.question_management - INFO - 等待下拉菜单出现...
+2025-03-04 17:14:36 - automation.question_management - ERROR - JavaScript点击失败，尝试备用方案: 未能通过JavaScript点击目标选项
+2025-03-04 17:14:36 - automation.question_management - INFO - 使用键盘操作...
+2025-03-04 17:14:43 - automation.question_management - INFO - 问答题添加成功
+2025-03-04 17:14:43 - __main__ - INFO - 自动化任务执行成功
+2025-03-04 17:21:24 - core.driver - INFO - Chrome浏览器已关闭
+2025-03-04 17:21:29 - core.profile_manager - INFO - Chrome用户数据目录: C:\Users\ly frienk\AppData\Local\Google\Chrome\User Data
+2025-03-04 17:21:29 - core.profile_manager - INFO - 找到 3 个Chrome用户配置文件
+2025-03-04 17:21:29 - __main__ - INFO - 使用配置文件 'Profile 2' 打开网站: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-04 17:21:29 - core.driver - INFO - 使用Chrome用户配置文件: Profile 2
+2025-03-04 17:21:31 - core.driver - INFO - Chrome浏览器启动成功
+2025-03-04 17:21:31 - core.driver - INFO - 正在访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-04 17:21:39 - core.driver - INFO - 成功访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-04 17:21:39 - __main__ - INFO - 开始添加问答题...
+2025-03-04 17:21:39 - automation.question_management - INFO - 准备添加问答题...
+2025-03-04 17:21:40 - automation.question_management - INFO - 定位下拉菜单按钮...
+2025-03-04 17:21:40 - automation.question_management - INFO - 等待按钮可交互...
+2025-03-04 17:21:42 - automation.question_management - INFO - 触发下拉菜单...
+2025-03-04 17:21:43 - automation.question_management - INFO - 尝试选择问答题...
+2025-03-04 17:21:43 - automation.question_management - ERROR - JavaScript点击失败，尝试备用方案: 未能通过JavaScript点击目标选项
+2025-03-04 17:21:43 - automation.question_management - INFO - 使用键盘操作...
+2025-03-04 17:21:50 - automation.question_management - INFO - 问答题添加成功
+2025-03-04 17:21:50 - __main__ - INFO - 自动化任务执行成功
+2025-03-04 17:30:07 - core.driver - INFO - Chrome浏览器已关闭
+2025-03-04 17:30:11 - core.profile_manager - INFO - Chrome用户数据目录: C:\Users\ly frienk\AppData\Local\Google\Chrome\User Data
+2025-03-04 17:30:11 - core.profile_manager - INFO - 找到 3 个Chrome用户配置文件
+2025-03-04 17:30:11 - __main__ - INFO - 使用配置文件 'Profile 2' 打开网站: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-04 17:30:11 - core.driver - INFO - 使用Chrome用户配置文件: Profile 2
+2025-03-04 17:30:13 - core.driver - INFO - Chrome浏览器启动成功
+2025-03-04 17:30:13 - core.driver - INFO - 正在访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-04 17:30:22 - core.driver - INFO - 成功访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-04 17:30:22 - __main__ - INFO - 开始添加问答题...
+2025-03-04 17:30:22 - automation.question_management - INFO - 准备添加问答题...
+2025-03-04 17:30:23 - automation.question_management - INFO - 定位下拉菜单按钮...
+2025-03-04 17:30:23 - automation.question_management - INFO - 等待按钮可交互...
+2025-03-04 17:30:24 - automation.question_management - INFO - 触发下拉菜单...
+2025-03-04 17:30:27 - automation.question_management - INFO - 尝试选择问答题...
+2025-03-04 17:30:27 - automation.question_management - ERROR - 直接点击失败，尝试备用方案: 未找到活动的下拉菜单
+2025-03-04 17:30:27 - automation.question_management - INFO - 使用JavaScript点击...
+2025-03-04 17:30:27 - automation.question_management - ERROR - JavaScript点击失败，尝试键盘操作: cannot access local variable 'position' where it is not associated with a value
+2025-03-04 17:30:27 - automation.question_management - INFO - 使用键盘操作...
+2025-03-04 17:30:27 - automation.question_management - ERROR - 键盘操作失败: cannot access local variable 'position' where it is not associated with a value
+2025-03-04 17:30:27 - __main__ - ERROR - 自动化任务执行失败
+2025-03-04 17:37:00 - core.driver - INFO - Chrome浏览器已关闭
+2025-03-04 17:37:04 - core.profile_manager - INFO - Chrome用户数据目录: C:\Users\ly frienk\AppData\Local\Google\Chrome\User Data
+2025-03-04 17:37:04 - core.profile_manager - INFO - 找到 3 个Chrome用户配置文件
+2025-03-04 17:37:04 - __main__ - INFO - 使用配置文件 'Profile 2' 打开网站: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-04 17:37:04 - core.driver - INFO - 使用Chrome用户配置文件: Profile 2
+2025-03-04 17:37:06 - core.driver - INFO - Chrome浏览器启动成功
+2025-03-04 17:37:06 - core.driver - INFO - 正在访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-04 17:38:21 - core.driver - ERROR - 访问URL失败: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=133.0.6943.142)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7A83DC6A5+28789]
+	(No symbol) [0x00007FF7A8345B20]
+	(No symbol) [0x00007FF7A81D8F9A]
+	(No symbol) [0x00007FF7A81C4D75]
+	(No symbol) [0x00007FF7A81E9784]
+	(No symbol) [0x00007FF7A825F0BF]
+	(No symbol) [0x00007FF7A827F0D2]
+	(No symbol) [0x00007FF7A8257103]
+	(No symbol) [0x00007FF7A821FFC0]
+	(No symbol) [0x00007FF7A8221273]
+	GetHandleVerifier [0x00007FF7A8721AED+3458237]
+	GetHandleVerifier [0x00007FF7A873829C+3550316]
+	GetHandleVerifier [0x00007FF7A872DB9D+3507565]
+	GetHandleVerifier [0x00007FF7A84A2C6A+841274]
+	(No symbol) [0x00007FF7A83509EF]
+	(No symbol) [0x00007FF7A834CB34]
+	(No symbol) [0x00007FF7A834CCD6]
+	(No symbol) [0x00007FF7A833C119]
+	BaseThreadInitThunk [0x00007FFBD827259D+29]
+	RtlUserThreadStart [0x00007FFBDA22AF38+40]
+
+2025-03-04 17:38:24 - core.driver - INFO - Chrome浏览器已关闭
+2025-03-04 17:38:28 - core.profile_manager - INFO - Chrome用户数据目录: C:\Users\ly frienk\AppData\Local\Google\Chrome\User Data
+2025-03-04 17:38:28 - core.profile_manager - INFO - 找到 3 个Chrome用户配置文件
+2025-03-04 17:38:28 - __main__ - INFO - 使用配置文件 'Profile 2' 打开网站: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-04 17:38:28 - core.driver - INFO - 使用Chrome用户配置文件: Profile 2
+2025-03-04 17:38:30 - core.driver - INFO - Chrome浏览器启动成功
+2025-03-04 17:38:30 - core.driver - INFO - 正在访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-04 17:38:40 - core.driver - INFO - 成功访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-04 17:38:40 - __main__ - INFO - 开始添加问答题...
+2025-03-04 17:38:40 - automation.question_management - INFO - 准备添加问答题...
+2025-03-04 17:38:42 - automation.question_management - INFO - 定位下拉菜单按钮...
+2025-03-04 17:38:42 - automation.question_management - INFO - 等待按钮可交互...
+2025-03-04 17:38:43 - automation.question_management - INFO - 触发下拉菜单...
+2025-03-04 17:38:46 - automation.question_management - INFO - 尝试选择问答题...
+2025-03-04 17:38:46 - automation.question_management - ERROR - 点击失败，尝试键盘操作: 未找到活动的下拉菜单
+2025-03-04 17:38:46 - automation.question_management - INFO - 使用键盘操作...
+2025-03-04 17:38:46 - automation.question_management - ERROR - 键盘操作失败: cannot access local variable 'position' where it is not associated with a value
+2025-03-04 17:38:46 - __main__ - ERROR - 自动化任务执行失败
+2025-03-04 17:45:01 - core.driver - INFO - Chrome浏览器已关闭
+2025-03-04 17:45:05 - core.profile_manager - INFO - Chrome用户数据目录: C:\Users\ly frienk\AppData\Local\Google\Chrome\User Data
+2025-03-04 17:45:05 - core.profile_manager - INFO - 找到 3 个Chrome用户配置文件
+2025-03-04 17:45:05 - __main__ - INFO - 使用配置文件 'Profile 2' 打开网站: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-04 17:45:05 - core.driver - INFO - 使用Chrome用户配置文件: Profile 2
+2025-03-04 17:45:07 - core.driver - INFO - Chrome浏览器启动成功
+2025-03-04 17:45:07 - core.driver - INFO - 正在访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-04 17:45:14 - core.driver - INFO - 成功访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-04 17:45:14 - __main__ - INFO - 开始添加问答题...
+2025-03-04 17:45:14 - automation.question_management - INFO - 准备添加问答题...
+2025-03-04 17:45:17 - automation.question_management - ERROR - 添加题目时发生错误: Message: javascript error: findDropdownElements is not defined
+  (Session info: chrome=133.0.6943.142)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7A83DC6A5+28789]
+	(No symbol) [0x00007FF7A8345B20]
+	(No symbol) [0x00007FF7A81D8F9A]
+	(No symbol) [0x00007FF7A81E09A9]
+	(No symbol) [0x00007FF7A81E3AB1]
+	(No symbol) [0x00007FF7A8280B42]
+	(No symbol) [0x00007FF7A825732A]
+	(No symbol) [0x00007FF7A827F7E3]
+	(No symbol) [0x00007FF7A8257103]
+	(No symbol) [0x00007FF7A821FFC0]
+	(No symbol) [0x00007FF7A8221273]
+	GetHandleVerifier [0x00007FF7A8721AED+3458237]
+	GetHandleVerifier [0x00007FF7A873829C+3550316]
+	GetHandleVerifier [0x00007FF7A872DB9D+3507565]
+	GetHandleVerifier [0x00007FF7A84A2C6A+841274]
+	(No symbol) [0x00007FF7A83509EF]
+	(No symbol) [0x00007FF7A834CB34]
+	(No symbol) [0x00007FF7A834CCD6]
+	(No symbol) [0x00007FF7A833C119]
+	BaseThreadInitThunk [0x00007FFBD827259D+29]
+	RtlUserThreadStart [0x00007FFBDA22AF38+40]
+
+2025-03-04 17:45:17 - automation.question_management - ERROR - 详细错误信息: Traceback (most recent call last):
+  File "e:\Github\kaoshixing\automation\question_management.py", line 104, in add_question
+    dropdown_info = driver.driver.execute_script("return findDropdownElements();")
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ly frienk\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 407, in execute_script
+    return self.execute(command, {"script": script, "args": converted_args})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ly frienk\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ly frienk\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.JavascriptException: Message: javascript error: findDropdownElements is not defined
+  (Session info: chrome=133.0.6943.142)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7A83DC6A5+28789]
+	(No symbol) [0x00007FF7A8345B20]
+	(No symbol) [0x00007FF7A81D8F9A]
+	(No symbol) [0x00007FF7A81E09A9]
+	(No symbol) [0x00007FF7A81E3AB1]
+	(No symbol) [0x00007FF7A8280B42]
+	(No symbol) [0x00007FF7A825732A]
+	(No symbol) [0x00007FF7A827F7E3]
+	(No symbol) [0x00007FF7A8257103]
+	(No symbol) [0x00007FF7A821FFC0]
+	(No symbol) [0x00007FF7A8221273]
+	GetHandleVerifier [0x00007FF7A8721AED+3458237]
+	GetHandleVerifier [0x00007FF7A873829C+3550316]
+	GetHandleVerifier [0x00007FF7A872DB9D+3507565]
+	GetHandleVerifier [0x00007FF7A84A2C6A+841274]
+	(No symbol) [0x00007FF7A83509EF]
+	(No symbol) [0x00007FF7A834CB34]
+	(No symbol) [0x00007FF7A834CCD6]
+	(No symbol) [0x00007FF7A833C119]
+	BaseThreadInitThunk [0x00007FFBD827259D+29]
+	RtlUserThreadStart [0x00007FFBDA22AF38+40]
+
+
+2025-03-04 17:45:17 - __main__ - ERROR - 自动化任务执行失败
+2025-03-04 17:50:25 - core.driver - INFO - Chrome浏览器已关闭
+2025-03-04 17:50:30 - core.profile_manager - INFO - Chrome用户数据目录: C:\Users\ly frienk\AppData\Local\Google\Chrome\User Data
+2025-03-04 17:50:30 - core.profile_manager - INFO - 找到 3 个Chrome用户配置文件
+2025-03-04 17:50:30 - __main__ - INFO - 使用配置文件 'Profile 2' 打开网站: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-04 17:50:30 - core.driver - INFO - 使用Chrome用户配置文件: Profile 2
+2025-03-04 17:50:31 - core.driver - INFO - Chrome浏览器启动成功
+2025-03-04 17:50:31 - core.driver - INFO - 正在访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-04 17:50:41 - core.driver - INFO - 成功访问URL: https://v.kaoshixing.com/admin/paper/#/create?source=toLib
+2025-03-04 17:50:41 - __main__ - INFO - 开始添加问答题...
+2025-03-04 17:50:41 - automation.question_management - INFO - 准备添加问答题...
+2025-03-04 17:50:47 - automation.question_management - INFO - 问答题添加成功
+2025-03-04 17:50:47 - __main__ - INFO - 自动化任务执行成功

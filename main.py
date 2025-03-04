@@ -14,11 +14,26 @@ from config.settings import DEFAULT_URL
 from utils.logger import setup_logger
 from utils.helpers import is_valid_url
 from automation.paper_settings import configure_paper_settings
+from automation.question_management import add_section, add_question, QuestionType
 
 logger = setup_logger(__name__)
 
 # 默认使用的配置文件名称
 DEFAULT_PROFILE = "Profile 2"
+
+def perform_automation_steps(driver):
+    """执行自动化步骤"""
+    try:
+            
+        # 2. 添加问答题
+        logger.info("开始添加问答题...")
+        if not add_question(driver, QuestionType.QUESTION_ANSWER):
+            return False
+            
+        return True
+    except Exception as e:
+        logger.error(f"执行自动化步骤时发生错误: {str(e)}")
+        return False
 
 def main():
     """主程序入口"""
@@ -84,7 +99,7 @@ def main():
             # 导航到目标网站
             if driver.navigate_to(url):
                 # 执行自动化步骤
-                if configure_paper_settings(driver):
+                if perform_automation_steps(driver):
                     logger.info("自动化任务执行成功")
                 else:
                     logger.error("自动化任务执行失败")
